@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_crHVAHQMEe2xpr2lrUUcUg" name="uc3">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_csVdAHQMEe2xpr2lrUUcUg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_j0RJAHQMEe2xpr2lrUUcUg" name="manages hostel facilities">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qd3TMHQMEe2xpr2lrUUcUg" name="display all facilities"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tt3EUHQMEe2xpr2lrUUcUg" name="add facility "/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_wMZjUHQMEe2xpr2lrUUcUg" name="facility given to the hostel"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_y-gekHQMEe2xpr2lrUUcUg" name="delete facility"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_1ew00HQMEe2xpr2lrUUcUg" name="facility deleted from the hostel"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_msPbsHQMEe2xpr2lrUUcUg" name="warden"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_nxGyAHQMEe2xpr2lrUUcUg" name="database"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5Uvn4HQMEe2xpr2lrUUcUg" name="all possible faci;ities will be displayed" memberEnd="_5UyEIHQMEe2xpr2lrUUcUg _5UyrMHQMEe2xpr2lrUUcUg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5UxdEHQMEe2xpr2lrUUcUg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5UxdEXQMEe2xpr2lrUUcUg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5UyEIHQMEe2xpr2lrUUcUg" name="database" type="_nxGyAHQMEe2xpr2lrUUcUg" association="_5Uvn4HQMEe2xpr2lrUUcUg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5UyrMHQMEe2xpr2lrUUcUg" name="display all facilities" type="_qd3TMHQMEe2xpr2lrUUcUg" association="_5Uvn4HQMEe2xpr2lrUUcUg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-O0VMHQMEe2xpr2lrUUcUg" name="warden wants to add some facility in the hostel" memberEnd="_-O08QnQMEe2xpr2lrUUcUg _-O08Q3QMEe2xpr2lrUUcUg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-O08QHQMEe2xpr2lrUUcUg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-O08QXQMEe2xpr2lrUUcUg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-O08QnQMEe2xpr2lrUUcUg" name="warden" type="_msPbsHQMEe2xpr2lrUUcUg" association="_-O0VMHQMEe2xpr2lrUUcUg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-O08Q3QMEe2xpr2lrUUcUg" name="add facility " type="_tt3EUHQMEe2xpr2lrUUcUg" association="_-O0VMHQMEe2xpr2lrUUcUg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CypswHQNEe2xpr2lrUUcUg" name="the hostel will get facility" memberEnd="_Cyq64nQNEe2xpr2lrUUcUg _Cyq643QNEe2xpr2lrUUcUg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Cyq64HQNEe2xpr2lrUUcUg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Cyq64XQNEe2xpr2lrUUcUg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Cyq64nQNEe2xpr2lrUUcUg" name="database" type="_nxGyAHQMEe2xpr2lrUUcUg" association="_CypswHQNEe2xpr2lrUUcUg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Cyq643QNEe2xpr2lrUUcUg" name="facility given to the hostel" type="_wMZjUHQMEe2xpr2lrUUcUg" association="_CypswHQNEe2xpr2lrUUcUg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HM4cYHQNEe2xpr2lrUUcUg" name="warden wants to delte some facility" memberEnd="_HM5DcnQNEe2xpr2lrUUcUg _HM5qgHQNEe2xpr2lrUUcUg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HM5DcHQNEe2xpr2lrUUcUg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HM5DcXQNEe2xpr2lrUUcUg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HM5DcnQNEe2xpr2lrUUcUg" name="warden" type="_msPbsHQMEe2xpr2lrUUcUg" association="_HM4cYHQNEe2xpr2lrUUcUg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HM5qgHQNEe2xpr2lrUUcUg" name="delete facility" type="_y-gekHQMEe2xpr2lrUUcUg" association="_HM4cYHQNEe2xpr2lrUUcUg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LN4MoHQNEe2xpr2lrUUcUg" name="facility deleted from the hostel" memberEnd="_LN4zsnQNEe2xpr2lrUUcUg _LN4zs3QNEe2xpr2lrUUcUg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LN4zsHQNEe2xpr2lrUUcUg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LN4zsXQNEe2xpr2lrUUcUg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LN4zsnQNEe2xpr2lrUUcUg" name="database" type="_nxGyAHQMEe2xpr2lrUUcUg" association="_LN4MoHQNEe2xpr2lrUUcUg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LN4zs3QNEe2xpr2lrUUcUg" name="facility deleted from the hostel" type="_1ew00HQMEe2xpr2lrUUcUg" association="_LN4MoHQNEe2xpr2lrUUcUg"/>
+  </packagedElement>
+</uml:Model>

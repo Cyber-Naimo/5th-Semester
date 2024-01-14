@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_UrcyAHNXEe2MaoQ2cFXeig" name="acitvity_diagram2">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Usgh8HNXEe2MaoQ2cFXeig">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_Ur1MgHNXEe2MaoQ2cFXeig" name="Activity1" node="_mt7qkHNYEe2MaoQ2cFXeig _zM2M4HNZEe2MaoQ2cFXeig _0c-YAHNZEe2MaoQ2cFXeig _6oQ1kHNZEe2MaoQ2cFXeig _9uYR8HNZEe2MaoQ2cFXeig _AReg0HNaEe2MaoQ2cFXeig _GBbGMHNaEe2MaoQ2cFXeig _Uuc7UHNaEe2MaoQ2cFXeig _upw74HNcEe2MaoQ2cFXeig _J2_iMHNdEe2MaoQ2cFXeig _f8idAHNdEe2MaoQ2cFXeig _jCFRoHNdEe2MaoQ2cFXeig _D-X3EHNfEe2MaoQ2cFXeig _GtvAUHNfEe2MaoQ2cFXeig _TW4SIHNfEe2MaoQ2cFXeig _MbKLQHNhEe2MaoQ2cFXeig _Swf8sHNhEe2MaoQ2cFXeig _i5rmwHNhEe2MaoQ2cFXeig _Ao8E8HNiEe2MaoQ2cFXeig _bsDF8HNiEe2MaoQ2cFXeig _abOP4HNlEe2MaoQ2cFXeig _pSQVkHNlEe2MaoQ2cFXeig _9KV6UHNlEe2MaoQ2cFXeig _OuXKsHNmEe2MaoQ2cFXeig _QiLRsHNmEe2MaoQ2cFXeig" group="_XxFGMHNXEe2MaoQ2cFXeig _czQmoHNXEe2MaoQ2cFXeig _eHHbMHNXEe2MaoQ2cFXeig _ff06kHNXEe2MaoQ2cFXeig">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bABAAHNaEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig" target="_zM2M4HNZEe2MaoQ2cFXeig" source="_mt7qkHNYEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mjx-IHNaEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig" target="_6oQ1kHNZEe2MaoQ2cFXeig" source="_0c-YAHNZEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_o73P0HNaEe2MaoQ2cFXeig" name="student wants facilities" inPartition="_XxFGMHNXEe2MaoQ2cFXeig" target="_9uYR8HNZEe2MaoQ2cFXeig" source="_6oQ1kHNZEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6TJEsHNaEe2MaoQ2cFXeig" name="student deletes facility" inPartition="_XxFGMHNXEe2MaoQ2cFXeig" target="_GBbGMHNaEe2MaoQ2cFXeig" source="_6oQ1kHNZEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_DbuZ0HNbEe2MaoQ2cFXeig" name="student complains sbout facility for student" inPartition="_XxFGMHNXEe2MaoQ2cFXeig" target="_AReg0HNaEe2MaoQ2cFXeig" source="_6oQ1kHNZEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x5Sy8HNcEe2MaoQ2cFXeig" name="warden gives facility" target="_upw74HNcEe2MaoQ2cFXeig" source="_9uYR8HNZEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2ME2wHNcEe2MaoQ2cFXeig" name="warden discontinues facility for student" target="_upw74HNcEe2MaoQ2cFXeig" source="_GBbGMHNaEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nijzMHNdEe2MaoQ2cFXeig" name="warden passes on the complain to admin" target="_f8idAHNdEe2MaoQ2cFXeig" source="_AReg0HNaEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_rMB0QHNdEe2MaoQ2cFXeig" name="admin processes th complaint" target="_jCFRoHNdEe2MaoQ2cFXeig" source="_f8idAHNdEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ba0TYHNfEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig" target="_D-X3EHNfEe2MaoQ2cFXeig" source="_Uuc7UHNaEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_gmoQ8HNfEe2MaoQ2cFXeig" name="in hostel" inPartition="_czQmoHNXEe2MaoQ2cFXeig" target="_GtvAUHNfEe2MaoQ2cFXeig" source="_D-X3EHNfEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_i6a4gHNfEe2MaoQ2cFXeig" name="from hostel" inPartition="_czQmoHNXEe2MaoQ2cFXeig" target="_TW4SIHNfEe2MaoQ2cFXeig" source="_D-X3EHNfEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hYBmwHNhEe2MaoQ2cFXeig" name="updated in database" target="_Swf8sHNhEe2MaoQ2cFXeig" source="_MbKLQHNhEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_k91P0HNhEe2MaoQ2cFXeig" name="warden adds a facility" inPartition="_czQmoHNXEe2MaoQ2cFXeig" target="_i5rmwHNhEe2MaoQ2cFXeig" source="_GtvAUHNfEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_pBoccHNhEe2MaoQ2cFXeig" name="warden deletes facility" inPartition="_czQmoHNXEe2MaoQ2cFXeig" target="_i5rmwHNhEe2MaoQ2cFXeig" source="_TW4SIHNfEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5JlXcHNhEe2MaoQ2cFXeig" name="admin approves the changes" target="_MbKLQHNhEe2MaoQ2cFXeig" source="_i5rmwHNhEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FbDJEHNiEe2MaoQ2cFXeig" name="admin  grants permission]" target="_Ao8E8HNiEe2MaoQ2cFXeig" source="_upw74HNcEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Lhzr8HNiEe2MaoQ2cFXeig" name="updated in database" target="_J2_iMHNdEe2MaoQ2cFXeig" source="_Ao8E8HNiEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dMCSAHNiEe2MaoQ2cFXeig" inPartition="_ff06kHNXEe2MaoQ2cFXeig" target="_bsDF8HNiEe2MaoQ2cFXeig" source="_Swf8sHNhEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_eVo-YHNiEe2MaoQ2cFXeig" inPartition="_ff06kHNXEe2MaoQ2cFXeig" target="_bsDF8HNiEe2MaoQ2cFXeig" source="_J2_iMHNdEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_sbTKIHNlEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig" target="_pSQVkHNlEe2MaoQ2cFXeig" source="_abOP4HNlEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uoUbUHNlEe2MaoQ2cFXeig" name="succesful log in" inPartition="_czQmoHNXEe2MaoQ2cFXeig" target="_Uuc7UHNaEe2MaoQ2cFXeig" source="_pSQVkHNlEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AfpCMHNmEe2MaoQ2cFXeig" name="login unsuccesful" target="_9KV6UHNlEe2MaoQ2cFXeig" source="_pSQVkHNlEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JKvxIHNmEe2MaoQ2cFXeig" target="_abOP4HNlEe2MaoQ2cFXeig" source="_zM2M4HNZEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U7bw8HNmEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig" target="_QiLRsHNmEe2MaoQ2cFXeig" source="_zM2M4HNZEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WgrQcHNmEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig" target="_OuXKsHNmEe2MaoQ2cFXeig" source="_QiLRsHNmEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_X0eaoHNmEe2MaoQ2cFXeig" name="login succesful" inPartition="_XxFGMHNXEe2MaoQ2cFXeig" target="_0c-YAHNZEe2MaoQ2cFXeig" source="_OuXKsHNmEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_azLAYHNmEe2MaoQ2cFXeig" name="login unsuccesful" target="_9KV6UHNlEe2MaoQ2cFXeig" source="_OuXKsHNmEe2MaoQ2cFXeig"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_XxFGMHNXEe2MaoQ2cFXeig" name="student" node="_mt7qkHNYEe2MaoQ2cFXeig _zM2M4HNZEe2MaoQ2cFXeig _0c-YAHNZEe2MaoQ2cFXeig _6oQ1kHNZEe2MaoQ2cFXeig _9uYR8HNZEe2MaoQ2cFXeig _AReg0HNaEe2MaoQ2cFXeig _GBbGMHNaEe2MaoQ2cFXeig _OuXKsHNmEe2MaoQ2cFXeig _QiLRsHNmEe2MaoQ2cFXeig" edge="_bABAAHNaEe2MaoQ2cFXeig _mjx-IHNaEe2MaoQ2cFXeig _o73P0HNaEe2MaoQ2cFXeig _6TJEsHNaEe2MaoQ2cFXeig _DbuZ0HNbEe2MaoQ2cFXeig _U7bw8HNmEe2MaoQ2cFXeig _WgrQcHNmEe2MaoQ2cFXeig _X0eaoHNmEe2MaoQ2cFXeig"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_czQmoHNXEe2MaoQ2cFXeig" name="warden" node="_Uuc7UHNaEe2MaoQ2cFXeig _upw74HNcEe2MaoQ2cFXeig _f8idAHNdEe2MaoQ2cFXeig _D-X3EHNfEe2MaoQ2cFXeig _GtvAUHNfEe2MaoQ2cFXeig _TW4SIHNfEe2MaoQ2cFXeig _i5rmwHNhEe2MaoQ2cFXeig _abOP4HNlEe2MaoQ2cFXeig _pSQVkHNlEe2MaoQ2cFXeig" edge="_ba0TYHNfEe2MaoQ2cFXeig _gmoQ8HNfEe2MaoQ2cFXeig _i6a4gHNfEe2MaoQ2cFXeig _k91P0HNhEe2MaoQ2cFXeig _pBoccHNhEe2MaoQ2cFXeig _sbTKIHNlEe2MaoQ2cFXeig _uoUbUHNlEe2MaoQ2cFXeig"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_eHHbMHNXEe2MaoQ2cFXeig" name="admin" node="_jCFRoHNdEe2MaoQ2cFXeig _MbKLQHNhEe2MaoQ2cFXeig _Ao8E8HNiEe2MaoQ2cFXeig _9KV6UHNlEe2MaoQ2cFXeig"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_ff06kHNXEe2MaoQ2cFXeig" name="database" node="_J2_iMHNdEe2MaoQ2cFXeig _Swf8sHNhEe2MaoQ2cFXeig _bsDF8HNiEe2MaoQ2cFXeig" edge="_dMCSAHNiEe2MaoQ2cFXeig _eVo-YHNiEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_mt7qkHNYEe2MaoQ2cFXeig" name="" outgoing="_bABAAHNaEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_zM2M4HNZEe2MaoQ2cFXeig" name="" incoming="_bABAAHNaEe2MaoQ2cFXeig" outgoing="_JKvxIHNmEe2MaoQ2cFXeig _U7bw8HNmEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_0c-YAHNZEe2MaoQ2cFXeig" name="student facilities" incoming="_X0eaoHNmEe2MaoQ2cFXeig" outgoing="_mjx-IHNaEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_6oQ1kHNZEe2MaoQ2cFXeig" name="" incoming="_mjx-IHNaEe2MaoQ2cFXeig" outgoing="_o73P0HNaEe2MaoQ2cFXeig _6TJEsHNaEe2MaoQ2cFXeig _DbuZ0HNbEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_9uYR8HNZEe2MaoQ2cFXeig" name="add facilities" incoming="_o73P0HNaEe2MaoQ2cFXeig" outgoing="_x5Sy8HNcEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_AReg0HNaEe2MaoQ2cFXeig" name="complain about facilities" incoming="_DbuZ0HNbEe2MaoQ2cFXeig" outgoing="_nijzMHNdEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_GBbGMHNaEe2MaoQ2cFXeig" name="widthdraw facilities" incoming="_6TJEsHNaEe2MaoQ2cFXeig" outgoing="_2ME2wHNcEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Uuc7UHNaEe2MaoQ2cFXeig" name="manage facilities" incoming="_uoUbUHNlEe2MaoQ2cFXeig" outgoing="_ba0TYHNfEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_upw74HNcEe2MaoQ2cFXeig" name="" incoming="_x5Sy8HNcEe2MaoQ2cFXeig _2ME2wHNcEe2MaoQ2cFXeig" outgoing="_FbDJEHNiEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_J2_iMHNdEe2MaoQ2cFXeig" name="added/deleted facility for student" incoming="_Lhzr8HNiEe2MaoQ2cFXeig" outgoing="_eVo-YHNiEe2MaoQ2cFXeig" inPartition="_ff06kHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_f8idAHNdEe2MaoQ2cFXeig" name="proceed complain" incoming="_nijzMHNdEe2MaoQ2cFXeig" outgoing="_rMB0QHNdEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_jCFRoHNdEe2MaoQ2cFXeig" name="manages complaint" incoming="_rMB0QHNdEe2MaoQ2cFXeig" inPartition="_eHHbMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_D-X3EHNfEe2MaoQ2cFXeig" name="" incoming="_ba0TYHNfEe2MaoQ2cFXeig" outgoing="_gmoQ8HNfEe2MaoQ2cFXeig _i6a4gHNfEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_GtvAUHNfEe2MaoQ2cFXeig" name="add facility " incoming="_gmoQ8HNfEe2MaoQ2cFXeig" outgoing="_k91P0HNhEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_TW4SIHNfEe2MaoQ2cFXeig" name="delete facility" incoming="_i6a4gHNfEe2MaoQ2cFXeig" outgoing="_pBoccHNhEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_MbKLQHNhEe2MaoQ2cFXeig" name="sllow adding/deleting facility" incoming="_5JlXcHNhEe2MaoQ2cFXeig" outgoing="_hYBmwHNhEe2MaoQ2cFXeig" inPartition="_eHHbMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Swf8sHNhEe2MaoQ2cFXeig" name="added/deleted facility for hoste;l" incoming="_hYBmwHNhEe2MaoQ2cFXeig" outgoing="_dMCSAHNiEe2MaoQ2cFXeig" inPartition="_ff06kHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_i5rmwHNhEe2MaoQ2cFXeig" name="" incoming="_k91P0HNhEe2MaoQ2cFXeig _pBoccHNhEe2MaoQ2cFXeig" outgoing="_5JlXcHNhEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Ao8E8HNiEe2MaoQ2cFXeig" name="admin approves" incoming="_FbDJEHNiEe2MaoQ2cFXeig" outgoing="_Lhzr8HNiEe2MaoQ2cFXeig" inPartition="_eHHbMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_bsDF8HNiEe2MaoQ2cFXeig" name="ActivityFinalNode44" incoming="_dMCSAHNiEe2MaoQ2cFXeig _eVo-YHNiEe2MaoQ2cFXeig" inPartition="_ff06kHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_abOP4HNlEe2MaoQ2cFXeig" name="warden logs in'" incoming="_JKvxIHNmEe2MaoQ2cFXeig" outgoing="_sbTKIHNlEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_pSQVkHNlEe2MaoQ2cFXeig" name="" incoming="_sbTKIHNlEe2MaoQ2cFXeig" outgoing="_uoUbUHNlEe2MaoQ2cFXeig _AfpCMHNmEe2MaoQ2cFXeig" inPartition="_czQmoHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_9KV6UHNlEe2MaoQ2cFXeig" name="display error" incoming="_AfpCMHNmEe2MaoQ2cFXeig _azLAYHNmEe2MaoQ2cFXeig" inPartition="_eHHbMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_OuXKsHNmEe2MaoQ2cFXeig" name="" incoming="_WgrQcHNmEe2MaoQ2cFXeig" outgoing="_X0eaoHNmEe2MaoQ2cFXeig _azLAYHNmEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_QiLRsHNmEe2MaoQ2cFXeig" name="student logs in" incoming="_U7bw8HNmEe2MaoQ2cFXeig" outgoing="_WgrQcHNmEe2MaoQ2cFXeig" inPartition="_XxFGMHNXEe2MaoQ2cFXeig"/>
+  </packagedElement>
+</uml:Model>

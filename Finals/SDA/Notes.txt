@@ -1,0 +1,11 @@
+Non-Iterative:
+In a non-iterative process, you and your team would work together to come up with a final product without necessarily trying new ideas along the way
+Waterfall is the most common non-iterative process. In the waterfall model, you and your team will define project phases before the project starts. Each phase begins once a previous phase is completed in its entirety. Requirements and resources will typically be locked before a project begins, and the team avoids changing the project plan as much as possible.
+
+
+Iterative:
+In an iterative process, your team works to refine and improve your project based on feedback or new information. The key to the iterative process is trial and error: the project gets better over time as a result of these changes.
+
+
+Increamental:
+In incremental design—sometimes called incremental development—you will add new features and build better things on top of your first version or deliverable

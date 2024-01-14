@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9RU_EHUFEe2m5OUqYSll7w" name="state_diagram2">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_9UXE8HUFEe2m5OUqYSll7w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_9SF0EHUFEe2m5OUqYSll7w" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_9SVrsHUFEe2m5OUqYSll7w" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_K3eEoHUGEe2m5OUqYSll7w" name="student checks status" source="__OIqAHUFEe2m5OUqYSll7w" target="_Ahw1EHUGEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ao8ZUHUGEe2m5OUqYSll7w" source="_FEG-4HUGEe2m5OUqYSll7w" target="_H1EqoHUGEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eTA3UHUGEe2m5OUqYSll7w" name="student pays rent" source="_Ahw1EHUGEe2m5OUqYSll7w" target="_FEG-4HUGEe2m5OUqYSll7w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="__OIqAHUFEe2m5OUqYSll7w" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_Ahw1EHUGEe2m5OUqYSll7w" name="unpaid rent"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FEG-4HUGEe2m5OUqYSll7w" name="rent paid"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_H1EqoHUGEe2m5OUqYSll7w" name=""/>
+    </region>
+    <region xmi:type="uml:Region" xmi:id="_gX2c4HUGEe2m5OUqYSll7w" name="Region2">
+      <transition xmi:type="uml:Transition" xmi:id="_757R0HUGEe2m5OUqYSll7w" name="warden views the database" source="_hJLzMHUGEe2m5OUqYSll7w" target="_inFUkHUGEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_-2rW0HUGEe2m5OUqYSll7w" name="warden checks all the rent details" source="_inFUkHUGEe2m5OUqYSll7w" target="_mjuwUHUGEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_DCJRsHUHEe2m5OUqYSll7w" name="the fee chalan is generated" source="_mjuwUHUGEe2m5OUqYSll7w" target="_pSyXkHUGEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GpX3EHUHEe2m5OUqYSll7w" name="verifies student payment" source="_pSyXkHUGEe2m5OUqYSll7w" target="_2xc8IHUGEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KXbdMHUHEe2m5OUqYSll7w" source="_2xc8IHUGEe2m5OUqYSll7w" target="_5W9l0HUGEe2m5OUqYSll7w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_hJLzMHUGEe2m5OUqYSll7w" name=""/>
+      <subvertex xmi:type="uml:State" xmi:id="_inFUkHUGEe2m5OUqYSll7w" name="viewing"/>
+      <subvertex xmi:type="uml:State" xmi:id="_mjuwUHUGEe2m5OUqYSll7w" name="verifying"/>
+      <subvertex xmi:type="uml:State" xmi:id="_pSyXkHUGEe2m5OUqYSll7w" name="generating rent"/>
+      <subvertex xmi:type="uml:State" xmi:id="_2xc8IHUGEe2m5OUqYSll7w" name="verifying payment"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_5W9l0HUGEe2m5OUqYSll7w" name="FinalState6"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_BFqzYHUGEe2m5OUqYSll7w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BFsBgHUGEe2m5OUqYSll7w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

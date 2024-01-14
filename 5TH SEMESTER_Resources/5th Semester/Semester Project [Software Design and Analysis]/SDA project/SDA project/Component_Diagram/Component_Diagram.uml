@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KshL8HTREe2m49TPyg8Fnw" name="Component_Diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_KvNTkHTREe2m49TPyg8Fnw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_HVgXYHTSEe2m49TPyg8Fnw" name="hostel management system server">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_yMc10HTYEe2m49TPyg8Fnw" client="_HVgXYHTSEe2m49TPyg8Fnw" supplier="_8u42oHTUEe2m49TPyg8Fnw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_zZdbgHTYEe2m49TPyg8Fnw" client="_HVgXYHTSEe2m49TPyg8Fnw" supplier="_pUK4cHTWEe2m49TPyg8Fnw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_0ll3cHTYEe2m49TPyg8Fnw" client="_HVgXYHTSEe2m49TPyg8Fnw" supplier="_HfFNUHTWEe2m49TPyg8Fnw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_1plEAHTYEe2m49TPyg8Fnw" client="_HVgXYHTSEe2m49TPyg8Fnw" supplier="_THtvQHTUEe2m49TPyg8Fnw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_cnvFQHTaEe2m49TPyg8Fnw" client="_HVgXYHTSEe2m49TPyg8Fnw" supplier="_o-X5gHTUEe2m49TPyg8Fnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_PIGfEHTUEe2m49TPyg8Fnw" name="user">
+    <packagedElement xmi:type="uml:Component" xmi:id="_RbhTMHTUEe2m49TPyg8Fnw" name="student">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_wtsG4HTaEe2m49TPyg8Fnw" name="required" client="_RbhTMHTUEe2m49TPyg8Fnw" supplier="_WHrD0HTVEe2m49TPyg8Fnw" contract="_WHrD0HTVEe2m49TPyg8Fnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_THtvQHTUEe2m49TPyg8Fnw" name="warden">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_tIoEsHTaEe2m49TPyg8Fnw" name="required" client="_THtvQHTUEe2m49TPyg8Fnw" supplier="_WHrD0HTVEe2m49TPyg8Fnw" contract="_WHrD0HTVEe2m49TPyg8Fnw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_o-X5gHTUEe2m49TPyg8Fnw" name="general processing ">
+    <packagedElement xmi:type="uml:Component" xmi:id="_r9TIwHTUEe2m49TPyg8Fnw" name="utility"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8u42oHTUEe2m49TPyg8Fnw" name="hostel">
+    <packagedElement xmi:type="uml:Component" xmi:id="_ka88MHTVEe2m49TPyg8Fnw" name="hostel">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Af0i4HTbEe2m49TPyg8Fnw" name="required" client="_ka88MHTVEe2m49TPyg8Fnw" supplier="_-IF2gHTaEe2m49TPyg8Fnw" contract="_-IF2gHTaEe2m49TPyg8Fnw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_WHrD0HTVEe2m49TPyg8Fnw" name="user UI"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_wfK8AHTVEe2m49TPyg8Fnw" name="admin">
+    <packagedElement xmi:type="uml:Component" xmi:id="_yQ1G4HTVEe2m49TPyg8Fnw" name="admin">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_09AnAHTaEe2m49TPyg8Fnw" name="required" client="_yQ1G4HTVEe2m49TPyg8Fnw" supplier="_14FhcHTVEe2m49TPyg8Fnw" contract="_14FhcHTVEe2m49TPyg8Fnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_3Hw5QHTYEe2m49TPyg8Fnw" client="_wfK8AHTVEe2m49TPyg8Fnw" supplier="_HVgXYHTSEe2m49TPyg8Fnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_14FhcHTVEe2m49TPyg8Fnw" name=" admin UI"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_HfFNUHTWEe2m49TPyg8Fnw" name="Services">
+    <packagedElement xmi:type="uml:Component" xmi:id="_PKh2EHTWEe2m49TPyg8Fnw" name="services">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_pbDmwHTaEe2m49TPyg8Fnw" name="required" client="_PKh2EHTWEe2m49TPyg8Fnw" supplier="_RWU_QHTWEe2m49TPyg8Fnw" contract="_RWU_QHTWEe2m49TPyg8Fnw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_RWU_QHTWEe2m49TPyg8Fnw" name="services UI"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pUK4cHTWEe2m49TPyg8Fnw" name="rent">
+    <packagedElement xmi:type="uml:Component" xmi:id="_tAmG4HTWEe2m49TPyg8Fnw" name="rent">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_im9cwHTaEe2m49TPyg8Fnw" name="required" client="_tAmG4HTWEe2m49TPyg8Fnw" supplier="_s142QHTXEe2m49TPyg8Fnw" contract="_s142QHTXEe2m49TPyg8Fnw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_s142QHTXEe2m49TPyg8Fnw" name="rent"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-IF2gHTaEe2m49TPyg8Fnw" name="hostel"/>
+</uml:Model>

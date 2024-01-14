@@ -1,0 +1,120 @@
+
+Muhmmad Naimatullah Khan
+21K-4540
+
+
+Question No 1:
+
+-- 1. Find the colors of boats reserved by Albert.
+π(color)(((σsname = 'albert') (Sailors)) ⨝ Reserves ⨝ Boats)
+
+-- 2. Find all sailor id’s of sailors who have a rating of at least 8 or reserved boat 103.
+ρ(temp1,(σ(rating) >= 8 Sailors) ∪ (σ(bid) = 103 Boats))
+π(sid)(temp1)
+
+-- 3. Find the names of sailors who have not reserved a red boat.
+ρ(temp,(σ(color≠red) (Boats)))
+π(sname)(temp ⨝ reserves ⨝ sailors)
+
+-- 4. Find the sailor id’s of sailors with age over 20 who have not reserved a red boat.
+π(sid)(σ(age) > 20 Sailors) -
+π(sid)((σ(color='red') (Boats)) ⨝ Reserves ⨝ Sailors)
+
+-- 5. Find the names of sailors who have reserved at least two boats.
+ρ(temp1,π(sid,sname,bid)(Sailors ⨝ Reserves))
+ρ(temp2(1→sid1,2→sname1,3→bid1,4→sid2,5→sname2,6→bid2),temp1 ⨯ temp1)
+π(sname1)(σ(sid1 = sid2 ∧ bid1≠bid2) (temp2))
+
+-- 6. Find the names of sailors who have reserved all boats.
+ρ(temp,(π(sid,bid) (Reserves))÷(π(bid) (Boats)))
+π(sname)(temp ⨝ Sailors)
+
+-- 7. Find the names of sailors who have reserved all boats called BigBoat.
+ρ(temp,(πsid,bid Reserves)÷(πbid(σbname='BigBoat' Boats))
+π(sname)(temp ⨝ Sailors)
+
+-- 8. Find the sailor id’s of sailors whose rating is better than some sailor called Bob. 
+ρ(temp1,π(rating)(σ(sname = 'Bob')(Sailors))
+ρ(temp2,σ(rating > ANY(temp1))(Sailors)
+π(sid) (temp2)
+
+-- 9. Find the sailor id’s of sailors whose rating is better than every sailor called Bob. 
+ρ(temp1,π(rating)(σ(sname = 'Bob')(Sailors))
+ρ(temp2,σ(rating > ALL(temp1))(Sailors)
+π(sid) (temp2)
+
+-- 10. Find the sailor id’s of sailors with the highest rating.
+ρ(temp,σ(rating >= π(rating) (Sailors) ) (Sailors) )
+π(sid)(temp)
+
+
+****************************************************************************************************************************************
+--------------------------------------- End of Question No 1 ---------------------------------------------------------------------------
+****************************************************************************************************************************************
+
+Question No 2:
+
+a.Find pizzerias visited by at least one person under 18 years old.
+
+SQL Query:
+SELECT DISTINCT pizzeria
+FROM Frequents
+WHERE name IN (SELECT name FROM Person WHERE age < 18);
+
+
+b.Get the names of females who like either mushroom or pepperoni pizza, or both.
+
+SQL Query:
+SELECT DISTINCT P.NAME FROM PERSON P,EATS E,SERVES S 
+WHERE P.NAME = E.NAME AND E.PIZZA = S.PIZZA AND 
+P.GENDER = 'FEMALE' AND (S.PIZZA = 'MUSHROOM' OR S.PIZZA = 'PEPPERONI')
+
+c.Find all pizzerias that offer at least one pizza that Amy eats for less than $10.
+
+SQL Query:
+
+SELECT DISTINCT s.pizzeria
+FROM Serves s,Eats e 
+WHERE s.pizza = e.pizza and e.name = 'Amy' AND s.price < 10;
+
+d. Find the names of all people who frequent only pizzerias serving at least one pizza they eat
+
+SQL Query:
+
+SELECT DISTINCT p.name
+FROM Person p
+WHERE p.name NOT IN (
+    SELECT f.name
+    FROM Frequents f
+    WHERE (f.name, f.pizzeria) NOT IN (
+        SELECT e.name, s.pizzeria
+        FROM Eats e,Serves s
+        where e.pizza = s.pizza
+    )
+);
+
+
+
+e. Find the names of all people who frequent every pizzeria serving at least one pizza they eat.
+
+SQL Query:
+
+SELECT DISTINCT p1.name
+FROM Person p1
+JOIN Eats e ON p1.name = e.name
+JOIN Serves s ON e.pizza = s.pizza
+LEFT JOIN Frequents f ON f.pizzeria = s.pizzeria AND f.name = p1.name
+GROUP BY p1.name
+HAVING COUNT(DISTINCT f.pizzeria) = (SELECT COUNT(*) FROM Serves s2 WHERE s2.pizza = e.pizza);
+
+
+****************************************************************************************************************************************
+--------------------------------------- End of Question No 2 ---------------------------------------------------------------------------
+****************************************************************************************************************************************
+
+
+
+
+
+
+

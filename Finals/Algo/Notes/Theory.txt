@@ -1,0 +1,149 @@
+(a) What is meant by P and NP Problems? Explain P = NP
+
+ P problems
+– (The original definition) Problems that can be solved by deterministic Turing machine 
+in polynomial-time.
+– (A equivalent definition) Problems that are solvable in polynomial time. 
+
+• NP problems
+– (The original definition) Problems that can be solved by non-deterministic Turing 
+machine in polynomial-time.
+– (A equivalent definition) Problems that are verifiable in polynomial time.
+• Given a solution, there is a polynomial-time algorithm to tell if this solution is 
+correct.
+
+
+P = NP means whether an NP problem can belong to class P problem. In other words, whether every 
+problem whose solution can be verified by a computer in polynomial time can also be solved by a computer in polynomial time
+
+
+(b) Why it is important to find approximate solutions for NP Complete Problems?
+If a problem is NP-complete, there is very likely no polynomial-time algorithm to find an 
+optimal solution. The idea of approximation algorithms is to develop polynomial-time 
+algorithms to find a near optimal solution.
+
+
+(h) All NP-hard problems are also NP-complete or not? If no then what is the difference?
+a. All NP-hard problems are not NP-complete. NP-complete are least hard problems of 
+NP-hard. All NP-complete problems can be verified in polynomial time but all NPhard problems cannot.
+
+
+(i) Give one example of P and NP problem. 
+a. Finding if given number is prime because solution can be obtained and verified in 
+polynomial time.
+But detecting hamiltonian cycle / solving sudoku game cannot be 
+solved in polyomial time but can be verified in polynomial time so they are NP 
+problems
+
+
+(j) If one problem can be solved in polynomial time by non-deterministic algorithm and 
+can be verified in polynomial time by deterministic algorithm then in which class this 
+problem lies?
+a. It is NP problem
+
+
+b) A problem that is solvable in time complexity of 𝑇(𝑛) = 3 ∗ 𝑛^𝑛 and space complexity of 𝑆(𝑛) = 𝑛^2
+and it can be validated in 𝑇(𝑛) = 2^𝑛
+time. Is it a NP-Complete or NP-Hard?
+
+B) NP-Hard as validated in 𝑇(𝑛) = 2^𝑛 time.
+(j) Can a problem be both NP and P ? Why or why not ?
+Yes because P is a subset of NP.
+
+
+b) Let X be a problem that belongs to the class NP. Then explain why the following are
+ incorrect or correct statements?
+A. Explain why it is incorrect) There is no polynomial time algorithm for X
+B. (Explain why it is incorrect) If X can be solved deterministically in polynomial 
+time then P = NP
+C. (Explain why it is correct) If X is NP-hard, then it is NP-complete
+D. (Explain why it is incorrect) X may be undecidable
+• Sol: 
+(A) is incorrect because set NP includes both P( Polynomial time solvable) and NP-Complete 
+(B) is incorrect because X may belong to P (same reason as (A)) 
+(C) is correct because NPComplete set is intersection of NP and NP-Hard sets. 
+(D) is incorrect because all NP problems are decidable in finite set of operations.
+
+c) Does P ! = NP mean that no problem exists which can be solved and checked in polynomial
+time?
+No. P != NP means that P is a proper subset of NP. That means, there are problems that are in NP 
+but not in P.
+
+(f) Suppose there is a maximization problem, where the approximate solution has the cost of 
+25 And optimal solution has the cost of 30. Find the approximation ratio. 
+30/25 = 1.2 approximation ratio
+
+
+(c) Explain the difference between greedy algorithms and dynamic programming [2 Points]
+
+Greedy Algorithms: A greedy algorithm is a mathematical process that looks for 
+simple and easy-to-implement solutions to complex, multi-step problems by 
+deciding which next step will provide the most obvious benefit.
+
+Dynamic Programming: It is often used to solve optimization problems. Its is a 
+tabular method in which we break down the problem into subproblems and place 
+the solution to the subproblems in a matrix
+
+
+e) In which conditions dynamic programing does not work. Give suitable example.
+Basic property of problems which can be solved using DP are.
+1. Overlapping Sub-problems.
+2. 2.Optimal Sub-structure
+If any problem doesn't have either of above property then problem can't be solved 
+using DP. for example shortest path can be solved using DP but longest path can't 
+solved, because longest path doesn't hold optimal sub-structure property
+
+
+(a) What do you mean by complexity of an algorithm?
+a. In computer science, the complexity of an algorithm is a way to classify how 
+efficient an algorithm is, compared to alternative ones. We determine efficiency 
+by space and time complexity.
+
+
+Write any one difference between divide & conquer approach and Dynamic 
+Programming?
+a. In dynamic programming, we have overlapping sub-problems where results are not 
+re-computed but rather stored while in divide and conquer, this is not the case.
+
+(d) Write down any one real life application of Maximum sub-array.
+a. In computer vision, maximum-subarray algorithms are used on bitmap images to 
+detect the brightest area in an image
+
+(e) When does the worst case of quick sort occur?
+a. The worst case occurs when the picked pivot is always an extreme (smallest or 
+largest) element. This happens when input array is sorted or reverse sorted and 
+either first or last element is picked as pivot.
+
+
+
+a) Write any two real life applications of the set cover problem
+• Selecting small number of sentences to tune all features in speech recognition
+• Selecting small number of telescope snapshots to capture light from all galaxies in 
+the night sky
+
+(b) If a problem does not have overlapping sub-problems, then dynamic programming 
+approach works better than divide and conquer. True or False? Also briefly explain.
+• False. Dynamic programming works better when there are overlapping 
+subproblems.
+
+(d) Discuss any two real life applications of the closest pair problem.
+• Collision avoidance
+• Clustering
+
+(e) Suppose you want to lay pipelines in a building such that minimum pipe and other 
+materials are consumed covering every desired location. Which technique from 
+algorithms course will you employ and why? 
+• Greedy technique (Minimum spanning tree)
+
+
+
+(j) What are the limitations of Greedy Algorithms?
+(j) Stuck in local minima.
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_T7APoHGuEe27Ko1FKpQuNg" name="uc6">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_T7szMHGuEe27Ko1FKpQuNg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ZUL6kHJNEe2h3PK-48JuYQ" name="manage rent">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gyzBMHJNEe2h3PK-48JuYQ" name="get total rent"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_zUHnUHJNEe2h3PK-48JuYQ" name="display rent"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_pkNsIHJQEe2h3PK-48JuYQ" name="check status"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_vWdXkHJQEe2h3PK-48JuYQ" name="pay rent"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_eZM94HUREe2m5OUqYSll7w" name="verify rent "/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_dZSuwHJNEe2h3PK-48JuYQ" name="warden"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_esmJsHJNEe2h3PK-48JuYQ" name="database"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mzkQ0HJNEe2h3PK-48JuYQ" name="warden looks for" memberEnd="_mzqXcHJNEe2h3PK-48JuYQ _mztawHJNEe2h3PK-48JuYQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mzoiQHJNEe2h3PK-48JuYQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mzoiQXJNEe2h3PK-48JuYQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mzqXcHJNEe2h3PK-48JuYQ" name="warden" type="_dZSuwHJNEe2h3PK-48JuYQ" association="_mzkQ0HJNEe2h3PK-48JuYQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mztawHJNEe2h3PK-48JuYQ" name="get total rent" type="_gyzBMHJNEe2h3PK-48JuYQ" association="_mzkQ0HJNEe2h3PK-48JuYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pWDbsHJNEe2h3PK-48JuYQ" name="all costs present in database" memberEnd="_pWIUMHJNEe2h3PK-48JuYQ _pWKJYHJNEe2h3PK-48JuYQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pWHGEHJNEe2h3PK-48JuYQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pWHtIHJNEe2h3PK-48JuYQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pWIUMHJNEe2h3PK-48JuYQ" name="database" type="_esmJsHJNEe2h3PK-48JuYQ" association="_pWDbsHJNEe2h3PK-48JuYQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pWKJYHJNEe2h3PK-48JuYQ" name="get total rent" type="_gyzBMHJNEe2h3PK-48JuYQ" association="_pWDbsHJNEe2h3PK-48JuYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WbLlwHJQEe2h3PK-48JuYQ" name="display rent to student" memberEnd="_WbRFUHJQEe2h3PK-48JuYQ _WbS6gHJQEe2h3PK-48JuYQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WbP3MHJQEe2h3PK-48JuYQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WbQeQHJQEe2h3PK-48JuYQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WbRFUHJQEe2h3PK-48JuYQ" name="warden" type="_dZSuwHJNEe2h3PK-48JuYQ" association="_WbLlwHJQEe2h3PK-48JuYQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WbS6gHJQEe2h3PK-48JuYQ" name="display rent" type="_zUHnUHJNEe2h3PK-48JuYQ" association="_WbLlwHJQEe2h3PK-48JuYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_bjyeUHJQEe2h3PK-48JuYQ" name="student"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_roBW8HJQEe2h3PK-48JuYQ" name="check student status" memberEnd="_roG2gXJQEe2h3PK-48JuYQ _roHdkHJQEe2h3PK-48JuYQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_roGPcHJQEe2h3PK-48JuYQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_roG2gHJQEe2h3PK-48JuYQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_roG2gXJQEe2h3PK-48JuYQ" name="student" type="_bjyeUHJQEe2h3PK-48JuYQ" association="_roBW8HJQEe2h3PK-48JuYQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_roHdkHJQEe2h3PK-48JuYQ" name="check status" type="_pkNsIHJQEe2h3PK-48JuYQ" association="_roBW8HJQEe2h3PK-48JuYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wo9hQHJQEe2h3PK-48JuYQ" name="student pays rent" memberEnd="_wpBysHJQEe2h3PK-48JuYQ _wpCZwHJQEe2h3PK-48JuYQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wo_9gHJQEe2h3PK-48JuYQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wpBLoHJQEe2h3PK-48JuYQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wpBysHJQEe2h3PK-48JuYQ" name="student" type="_bjyeUHJQEe2h3PK-48JuYQ" association="_wo9hQHJQEe2h3PK-48JuYQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_wpCZwHJQEe2h3PK-48JuYQ" name="pay rent" type="_vWdXkHJQEe2h3PK-48JuYQ" association="_wo9hQHJQEe2h3PK-48JuYQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g_PMAHUREe2m5OUqYSll7w" name="warden verifies rent" memberEnd="_g_hf4HUREe2m5OUqYSll7w _g_iG8HUREe2m5OUqYSll7w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g_fDoHUREe2m5OUqYSll7w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g_fDoXUREe2m5OUqYSll7w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g_hf4HUREe2m5OUqYSll7w" name="warden" type="_dZSuwHJNEe2h3PK-48JuYQ" association="_g_PMAHUREe2m5OUqYSll7w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g_iG8HUREe2m5OUqYSll7w" name="verify rent " type="_eZM94HUREe2m5OUqYSll7w" association="_g_PMAHUREe2m5OUqYSll7w"/>
+  </packagedElement>
+</uml:Model>

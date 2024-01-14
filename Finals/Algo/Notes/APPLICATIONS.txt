@@ -1,0 +1,19 @@
+Sure, here are real-world applications for the mentioned algorithms:
+
+1. DFS (Depth-First Search): Network analysis, web crawling.
+2. BFS (Breadth-First Search): Shortest path in GPS navigation, social network friend recommendations.
+3. Prim's Algorithm: Network design, circuit layout.
+4. Kruskal's Algorithm: Network design, road construction planning.
+5. Dijkstra's Algorithm: GPS navigation, network routing.
+6. Bellman-Ford Algorithm: Network routing, airline flight scheduling.
+7. Floyd-Warshall Algorithm: Traffic engineering, airline flight connections.
+8. QuickSort: Sorting in databases, file systems.
+9. MergeSort: External sorting, data analysis.
+10. InsertionSort: Small-scale sorting, card games.
+11. CountSort: Integer sorting, frequency analysis.
+12. RadixSort: Sorting phone numbers, strings.
+13. BucketSort: Sorting heights, ages, and other continuous data.
+14. HeapSort: Operating system scheduling, memory management.
+15. Topological Sort: Task scheduling, dependency resolution.
+
+These algorithms are applied in various fields like computer science, transportation, network design, and data analysis to solve a wide range of practical problems.

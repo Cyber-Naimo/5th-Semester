@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ejtU0HT9Ee2m5OUqYSll7w" name="state_diagram1">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_e8ck8HT9Ee2m5OUqYSll7w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_ezNwcHT9Ee2m5OUqYSll7w" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_e14C4HT9Ee2m5OUqYSll7w" name="logged out">
+      <transition xmi:type="uml:Transition" xmi:id="_2MDiUHUBEe2m5OUqYSll7w" name="signs up" source="_QJD-QHT_Ee2m5OUqYSll7w" target="_SQQUQHT_Ee2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_PbtBoHUCEe2m5OUqYSll7w" name="logs in" source="_SQQUQHT_Ee2m5OUqYSll7w" target="_vZdfEHT_Ee2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_44sc0HUDEe2m5OUqYSll7w" name="proceed to" source="_vZdfEHT_Ee2m5OUqYSll7w" target="_n5_K4HUBEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_1DZJwHUEEe2m5OUqYSll7w" name="does either" source="_n5_K4HUBEe2m5OUqYSll7w" target="_cRPewHUEEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="__QM8AHUEEe2m5OUqYSll7w" name="adds " source="_cRPewHUEEe2m5OUqYSll7w" target="_i0r9oHUEEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_JGJGYHUFEe2m5OUqYSll7w" name="fills complaint" source="_cRPewHUEEe2m5OUqYSll7w" target="_ydvWIHUEEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_PaVBQHUFEe2m5OUqYSll7w" name="drops" source="_cRPewHUEEe2m5OUqYSll7w" target="_pKnk8HUEEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ZBfIwHUFEe2m5OUqYSll7w" source="_ydvWIHUEEe2m5OUqYSll7w" target="_n5_K4HUBEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_aeddEHUFEe2m5OUqYSll7w" source="_pKnk8HUEEe2m5OUqYSll7w" target="_n5_K4HUBEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_b5DLwHUFEe2m5OUqYSll7w" source="_i0r9oHUEEe2m5OUqYSll7w" target="_n5_K4HUBEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_oSd_gHUFEe2m5OUqYSll7w" source="_n5_K4HUBEe2m5OUqYSll7w" target="_fALUwHUFEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_pxTVAHUFEe2m5OUqYSll7w" source="_fALUwHUFEe2m5OUqYSll7w" target="_dHZOMHUFEe2m5OUqYSll7w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_QJD-QHT_Ee2m5OUqYSll7w" name="Initial1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_SQQUQHT_Ee2m5OUqYSll7w" name="registered"/>
+      <subvertex xmi:type="uml:State" xmi:id="_vZdfEHT_Ee2m5OUqYSll7w" name="loggedin"/>
+      <subvertex xmi:type="uml:State" xmi:id="_n5_K4HUBEe2m5OUqYSll7w" name="home_page"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_cRPewHUEEe2m5OUqYSll7w" name="" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_i0r9oHUEEe2m5OUqYSll7w" name="getsfacility"/>
+      <subvertex xmi:type="uml:State" xmi:id="_pKnk8HUEEe2m5OUqYSll7w" name="nothavingfacility"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ydvWIHUEEe2m5OUqYSll7w" name="coplaining"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_dHZOMHUFEe2m5OUqYSll7w" name="FinalState19"/>
+      <subvertex xmi:type="uml:State" xmi:id="_fALUwHUFEe2m5OUqYSll7w" name="logged out"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_npPEAHT_Ee2m5OUqYSll7w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_npWYwHT_Ee2m5OUqYSll7w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

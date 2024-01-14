@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_YF4ogHJaEe2h3PK-48JuYQ" name="class diagram">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_YIaYEHJaEe2h3PK-48JuYQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="__le7MHJhEe2h3PK-48JuYQ" name="student_details">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qR__YHJ1Ee2TYfKgs8nILA" name="first_name" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1S0BcHJ1Ee2TYfKgs8nILA" name="last_name" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6cZxcHJ1Ee2TYfKgs8nILA" name="phone_number">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PPY4MHJ2Ee2TYfKgs8nILA" name="CNIC">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_a8Z48HJ2Ee2TYfKgs8nILA" name="guardian_name" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iY3qgHJ2Ee2TYfKgs8nILA" name="address" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_sNBsMHJ2Ee2TYfKgs8nILA" name="join_date" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4cmAYHJ2Ee2TYfKgs8nILA" name="password" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GIq1MHJ_Ee2TYfKgs8nILA" name="student_id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XvMNsHKEEe2TYfKgs8nILA" name="hostel_details" type="_e9FqsHJ3Ee2TYfKgs8nILA" association="_XvJKYHKEEe2TYfKgs8nILA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XvOp8HKEEe2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KKjHgHKFEe2TYfKgs8nILA" name="facilities" type="_YZK1QHJ4Ee2TYfKgs8nILA" association="_KKdn8HKFEe2TYfKgs8nILA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KKk8sHKFEe2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ye4IwXKFEe2TYfKgs8nILA" name="complaints" type="_GD0uQHJ7Ee2TYfKgs8nILA" association="_Ye2TkHKFEe2TYfKgs8nILA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ye5W4HKFEe2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__ssMEnKFEe2TYfKgs8nILA" name="rooms" type="_P-NQkHJ3Ee2TYfKgs8nILA" association="__sqW4HKFEe2TYfKgs8nILA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1Dw3YHL6Ee2Tuu9hd5D5RA" name="accounts" type="_tBN3UHJ4Ee2TYfKgs8nILA" association="_1DrX0HL6Ee2Tuu9hd5D5RA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1DyskHL6Ee2Tuu9hd5D5RA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1DzToHL6Ee2Tuu9hd5D5RA" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5EQrEHJ7Ee2TYfKgs8nILA" name="signuo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OaVQwHJ8Ee2TYfKgs8nILA" name="login">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_V6Zv8HJ8Ee2TYfKgs8nILA" name="first_name"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_X46EAHJ8Ee2TYfKgs8nILA" name="last_name"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ht-EoHJ8Ee2TYfKgs8nILA" name="password"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_p-z5cHJ8Ee2TYfKgs8nILA" name="check_status"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_BKv0kHJ9Ee2TYfKgs8nILA" name="ask_for_facility">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_LCNB4HJ9Ee2TYfKgs8nILA" name="facility_id"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ORCVYHJ9Ee2TYfKgs8nILA" name="complaint_abbt_facility">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Zay4EHJ9Ee2TYfKgs8nILA" name="facility_id"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_apAXoHJ9Ee2TYfKgs8nILA" name="withdraw_facility">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_fZJF0HJ9Ee2TYfKgs8nILA" name="facility_id"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lsCAMHJ9Ee2TYfKgs8nILA" name="check_status"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_P-NQkHJ3Ee2TYfKgs8nILA" name="rooms">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SjuhUHJ3Ee2TYfKgs8nILA" name="room_no">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_e9FqsHJ3Ee2TYfKgs8nILA" name="hostel_details">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_k3i28HJ3Ee2TYfKgs8nILA" name="hostel_id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_q0_FwHJ3Ee2TYfKgs8nILA" name="hostel_name" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3SUwMHJ3Ee2TYfKgs8nILA" name="hostel_address">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_9Fhd4HJ3Ee2TYfKgs8nILA" name="total_rooms" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EYLMIHJ4Ee2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GbpfwHJ4Ee2TYfKgs8nILA" name="base_rent" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PrVicHJ4Ee2TYfKgs8nILA" name="password" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_B7EaEHKEEe2TYfKgs8nILA" name="facilities" type="_YZK1QHJ4Ee2TYfKgs8nILA" association="_B7DL8HKEEe2TYfKgs8nILA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B7EaEnKEEe2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_O9dSUnKEEe2TYfKgs8nILA" name="rooms" type="_P-NQkHJ3Ee2TYfKgs8nILA" association="_O9aPAHKEEe2TYfKgs8nILA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O9gVoHKEEe2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yb_LAHKFEe2TYfKgs8nILA" name="accounts" type="_tBN3UHJ4Ee2TYfKgs8nILA" association="_yb984HKFEe2TYfKgs8nILA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ycFRoHKFEe2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_shjboHJ_Ee2TYfKgs8nILA" name="signup"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_wS60cHJ_Ee2TYfKgs8nILA" name="login">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_1BFzwHJ_Ee2TYfKgs8nILA" name="hostel_name"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3R1HUHJ_Ee2TYfKgs8nILA" name="password"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4mnI8HJ_Ee2TYfKgs8nILA" name="add_student">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_9IbHQHJ_Ee2TYfKgs8nILA" name="student_id"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-pf4cHJ_Ee2TYfKgs8nILA" name="manage_facility">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_DXiU4HKAEe2TYfKgs8nILA" name="facility_id"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YZK1QHJ4Ee2TYfKgs8nILA" name="facilities">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_aqmsYHJ4Ee2TYfKgs8nILA" name="facility_id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fOg8cHJ4Ee2TYfKgs8nILA" name="facility_name" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lQ3gcHJ4Ee2TYfKgs8nILA" name="facility_rent" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rIXfUHJ4Ee2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UbpHYnKGEe2TYfKgs8nILA" name="complaints" type="_GD0uQHJ7Ee2TYfKgs8nILA" association="_Ubn5QHKGEe2TYfKgs8nILA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ubq8kHKGEe2TYfKgs8nILA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ubq8kXKGEe2TYfKgs8nILA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tBN3UHJ4Ee2TYfKgs8nILA" name="accounts">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_B2iq8HJ6Ee2TYfKgs8nILA" name="due_date" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Nz_UYHJ6Ee2TYfKgs8nILA" name="status" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vaWfoHJ9Ee2TYfKgs8nILA" name="generate_rent">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_zmtyYHJ9Ee2TYfKgs8nILA" name="student_id"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GD0uQHJ7Ee2TYfKgs8nILA" name="complaints">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IJrAcHJ7Ee2TYfKgs8nILA" name="complaint_ticket">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NV3YgHJ7Ee2TYfKgs8nILA" name="comment" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mldNcHJ7Ee2TYfKgs8nILA" name="complaint_status" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4AR-MHJ-Ee2TYfKgs8nILA" name="submit_complain">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_TNhLkHJ_Ee2TYfKgs8nILA" name="student_id"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_U4bOMHJ_Ee2TYfKgs8nILA" name="facility_id"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_eQ9D0HJ_Ee2TYfKgs8nILA" name="check_complain_status">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_j3LFcHJ_Ee2TYfKgs8nILA" name="complaint_ticket"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_B7DL8HKEEe2TYfKgs8nILA" name="hostel has facilities" memberEnd="_B7EaEHKEEe2TYfKgs8nILA _B7GPQHKEEe2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B7DzAHKEEe2TYfKgs8nILA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B7DzAXKEEe2TYfKgs8nILA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_B7GPQHKEEe2TYfKgs8nILA" name="hostel_details" type="_e9FqsHJ3Ee2TYfKgs8nILA" association="_B7DL8HKEEe2TYfKgs8nILA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_O9aPAHKEEe2TYfKgs8nILA" name="hostel has rooms" memberEnd="_O9dSUnKEEe2TYfKgs8nILA _O9gVoXKEEe2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O9dSUHKEEe2TYfKgs8nILA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O9dSUXKEEe2TYfKgs8nILA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_O9gVoXKEEe2TYfKgs8nILA" name="hostel_details" type="_e9FqsHJ3Ee2TYfKgs8nILA" association="_O9aPAHKEEe2TYfKgs8nILA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XvJKYHKEEe2TYfKgs8nILA" name="student lives in" memberEnd="_XvMNsHKEEe2TYfKgs8nILA _XvOp8XKEEe2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XvLmoHKEEe2TYfKgs8nILA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XvLmoXKEEe2TYfKgs8nILA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XvOp8XKEEe2TYfKgs8nILA" name="student_details" type="__le7MHJhEe2h3PK-48JuYQ" association="_XvJKYHKEEe2TYfKgs8nILA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_edM90HKEEe2TYfKgs8nILA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KKdn8HKFEe2TYfKgs8nILA" name="student has facilities" memberEnd="_KKjHgHKFEe2TYfKgs8nILA _KKljwHKFEe2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KKgEMHKFEe2TYfKgs8nILA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KKh5YHKFEe2TYfKgs8nILA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KKljwHKFEe2TYfKgs8nILA" name="student_details" type="__le7MHJhEe2h3PK-48JuYQ" association="_KKdn8HKFEe2TYfKgs8nILA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VXCOEHKFEe2TYfKgs8nILA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VXPCYHKFEe2TYfKgs8nILA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ye2TkHKFEe2TYfKgs8nILA" name="student makes complaints" memberEnd="_Ye4IwXKFEe2TYfKgs8nILA _Ye7MEHKFEe2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ye3hsHKFEe2TYfKgs8nILA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ye4IwHKFEe2TYfKgs8nILA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ye7MEHKFEe2TYfKgs8nILA" name="student_details" type="__le7MHJhEe2h3PK-48JuYQ" association="_Ye2TkHKFEe2TYfKgs8nILA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gugcoHKFEe2TYfKgs8nILA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f-wasHKFEe2TYfKgs8nILA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yb984HKFEe2TYfKgs8nILA" name="hostel manages accounts" memberEnd="_yb_LAHKFEe2TYfKgs8nILA _ycHt4HKFEe2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yb-j8HKFEe2TYfKgs8nILA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yb-j8XKFEe2TYfKgs8nILA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ycHt4HKFEe2TYfKgs8nILA" name="hostel_details" type="_e9FqsHJ3Ee2TYfKgs8nILA" association="_yb984HKFEe2TYfKgs8nILA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4ooTcHKFEe2TYfKgs8nILA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__sqW4HKFEe2TYfKgs8nILA" name="students have a room" memberEnd="__ssMEnKFEe2TYfKgs8nILA __staMHKFEe2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__ssMEHKFEe2TYfKgs8nILA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__ssMEXKFEe2TYfKgs8nILA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__staMHKFEe2TYfKgs8nILA" name="student_details" type="__le7MHJhEe2h3PK-48JuYQ" association="__sqW4HKFEe2TYfKgs8nILA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IF1BQHKGEe2TYfKgs8nILA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IF7u8HKGEe2TYfKgs8nILA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ubn5QHKGEe2TYfKgs8nILA" name="facility has a complaint" memberEnd="_UbpHYnKGEe2TYfKgs8nILA _Ubq8knKGEe2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UbpHYHKGEe2TYfKgs8nILA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UbpHYXKGEe2TYfKgs8nILA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ubq8knKGEe2TYfKgs8nILA" name="facilities" type="_YZK1QHJ4Ee2TYfKgs8nILA" association="_Ubn5QHKGEe2TYfKgs8nILA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bbl8EHKGEe2TYfKgs8nILA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bb-WkHKGEe2TYfKgs8nILA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1DrX0HL6Ee2Tuu9hd5D5RA" memberEnd="_1Dw3YHL6Ee2Tuu9hd5D5RA _1D0hwHL6Ee2Tuu9hd5D5RA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1DvCMHL6Ee2Tuu9hd5D5RA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1DvpQHL6Ee2Tuu9hd5D5RA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1D0hwHL6Ee2Tuu9hd5D5RA" name="student_details" type="__le7MHJhEe2h3PK-48JuYQ" association="_1DrX0HL6Ee2Tuu9hd5D5RA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GeQSYHJ5Ee2TYfKgs8nILA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GegxEHJ5Ee2TYfKgs8nILA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_X_FSIHL4Ee2Tuu9hd5D5RA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X_Y0IHL4Ee2Tuu9hd5D5RA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+  </uml:Model>
+  <Codegen:GeneratorHint xmi:id="_YFrpYHL4Ee2Tuu9hd5D5RA" base_Element="_YF4ogHJaEe2h3PK-48JuYQ" generatorID="Standard Java">
+    <language xmi:type="Codegen:Language" href="pathmap://Codegen_PROFILES/languages.uml#_2Zt6YCjREeayco6FJ_OtTQ"/>
+  </Codegen:GeneratorHint>
+</xmi:XMI>

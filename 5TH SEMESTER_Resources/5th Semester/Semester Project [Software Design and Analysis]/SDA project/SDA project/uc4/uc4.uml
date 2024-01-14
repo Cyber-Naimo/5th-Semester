@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_FVnUkHGjEe27Ko1FKpQuNg" name="uc4">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_FXN3EHGjEe27Ko1FKpQuNg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LFfBcHGjEe27Ko1FKpQuNg" name="students and facilities">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6RIokHGkEe27Ko1FKpQuNg" name="ask for a facility"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CvjmYHGlEe27Ko1FKpQuNg" name="grant the facility">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ORweQHGlEe27Ko1FKpQuNg" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_K5808HGlEe27Ko1FKpQuNg" name="facility unavailable">
+      <extend xmi:type="uml:Extend" xmi:id="_ORuCAHGlEe27Ko1FKpQuNg" extendedCase="_CvjmYHGlEe27Ko1FKpQuNg" extensionLocation="_ORweQHGlEe27Ko1FKpQuNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_QmFRUHGlEe27Ko1FKpQuNg" name="complain about facility"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_S-_CYHGlEe27Ko1FKpQuNg" name="process complain">
+      <include xmi:type="uml:Include" xmi:id="_l3sNwHGlEe27Ko1FKpQuNg" addition="_jsh9wHGlEe27Ko1FKpQuNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jsh9wHGlEe27Ko1FKpQuNg" name="send to admin"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_oHiJcHGlEe27Ko1FKpQuNg" name="withdraw facility"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_K9PkEHGmEe27Ko1FKpQuNg" name="remove facility"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_NcNBMHGjEe27Ko1FKpQuNg" name="student"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Om89EHGjEe27Ko1FKpQuNg" name="warden"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-MNXAHGkEe27Ko1FKpQuNg" name="students wants a facility" memberEnd="_-MTdoHGkEe27Ko1FKpQuNg _-MUrwHGkEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-MPzQHGkEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-MRocHGkEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-MTdoHGkEe27Ko1FKpQuNg" name="student" type="_NcNBMHGjEe27Ko1FKpQuNg" association="_-MNXAHGkEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-MUrwHGkEe27Ko1FKpQuNg" name="ask for a facility" type="_6RIokHGkEe27Ko1FKpQuNg" association="_-MNXAHGkEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AEbc4HGlEe27Ko1FKpQuNg" name="the request goes to the warden" memberEnd="_AEcD8XGlEe27Ko1FKpQuNg _AEcD8nGlEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AEbc4XGlEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AEcD8HGlEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AEcD8XGlEe27Ko1FKpQuNg" name="warden" type="_Om89EHGjEe27Ko1FKpQuNg" association="_AEbc4HGlEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AEcD8nGlEe27Ko1FKpQuNg" name="ask for a facility" type="_6RIokHGkEe27Ko1FKpQuNg" association="_AEbc4HGlEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FW41AHGlEe27Ko1FKpQuNg" name="warden grants the facility " memberEnd="_FW5cEnGlEe27Ko1FKpQuNg _FW5cE3GlEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FW5cEHGlEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FW5cEXGlEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FW5cEnGlEe27Ko1FKpQuNg" name="warden" type="_Om89EHGjEe27Ko1FKpQuNg" association="_FW41AHGlEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FW5cE3GlEe27Ko1FKpQuNg" name="grant the facility" type="_CvjmYHGlEe27Ko1FKpQuNg" association="_FW41AHGlEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XEBlIHGlEe27Ko1FKpQuNg" name="student has a complain " memberEnd="_XECMMXGlEe27Ko1FKpQuNg _XECMMnGlEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XEBlIXGlEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XECMMHGlEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XECMMXGlEe27Ko1FKpQuNg" name="student" type="_NcNBMHGjEe27Ko1FKpQuNg" association="_XEBlIHGlEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XECMMnGlEe27Ko1FKpQuNg" name="complain about facility" type="_QmFRUHGlEe27Ko1FKpQuNg" association="_XEBlIHGlEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cGHmAHGlEe27Ko1FKpQuNg" name="the cimplaint goes to the warden" memberEnd="_cGI0IXGlEe27Ko1FKpQuNg _cGJbMHGlEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cGINEHGlEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cGI0IHGlEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cGI0IXGlEe27Ko1FKpQuNg" name="warden" type="_Om89EHGjEe27Ko1FKpQuNg" association="_cGHmAHGlEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cGJbMHGlEe27Ko1FKpQuNg" name="complain about facility" type="_QmFRUHGlEe27Ko1FKpQuNg" association="_cGHmAHGlEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g5vtEHGlEe27Ko1FKpQuNg" name="warden processes the complain" memberEnd="_g5wUIXGlEe27Ko1FKpQuNg _g5wUInGlEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g5vtEXGlEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g5wUIHGlEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g5wUIXGlEe27Ko1FKpQuNg" name="warden" type="_Om89EHGjEe27Ko1FKpQuNg" association="_g5vtEHGlEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g5wUInGlEe27Ko1FKpQuNg" name="process complain" type="_S-_CYHGlEe27Ko1FKpQuNg" association="_g5vtEHGlEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_t_IO8HGlEe27Ko1FKpQuNg" name="student discontinues a facility" memberEnd="_t_JdEnGlEe27Ko1FKpQuNg _t_KEIHGlEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t_JdEHGlEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t_JdEXGlEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t_JdEnGlEe27Ko1FKpQuNg" name="student has a complain " type="_XEBlIHGlEe27Ko1FKpQuNg" association="_t_IO8HGlEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t_KEIHGlEe27Ko1FKpQuNg" name="withdraw facility" type="_oHiJcHGlEe27Ko1FKpQuNg" association="_t_IO8HGlEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CVY9cHGmEe27Ko1FKpQuNg" name="request goes to warden" memberEnd="_CVZkgnGmEe27Ko1FKpQuNg _CVZkg3GmEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CVZkgHGmEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CVZkgXGmEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CVZkgnGmEe27Ko1FKpQuNg" name="warden" type="_Om89EHGjEe27Ko1FKpQuNg" association="_CVY9cHGmEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CVZkg3GmEe27Ko1FKpQuNg" name="withdraw facility" type="_oHiJcHGlEe27Ko1FKpQuNg" association="_CVY9cHGmEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Npg9EHGmEe27Ko1FKpQuNg" name="facility removed for the student" memberEnd="_NpiLMnGmEe27Ko1FKpQuNg _NpiyQHGmEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NpiLMHGmEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NpiLMXGmEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NpiLMnGmEe27Ko1FKpQuNg" name="warden" type="_Om89EHGjEe27Ko1FKpQuNg" association="_Npg9EHGmEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NpiyQHGmEe27Ko1FKpQuNg" name="remove facility" type="_K9PkEHGmEe27Ko1FKpQuNg" association="_Npg9EHGmEe27Ko1FKpQuNg"/>
+  </packagedElement>
+</uml:Model>

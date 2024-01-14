@@ -1,0 +1,86 @@
+ db.students.find({},{age:true}).pretty() FOR FINDING SPECIFIC FIELD LIKE HERE ONLY GAVE AGE
+
+ db.students.find({name:"Naimat"}).pretty() FOR FINDING RECORD WHERE NAME= NAIMAT IT GAVES ALL FIELD VALUES.
+
+db.students.find({gpa:3.3,fulltime:True}).pretty() and operator
+
+
+ db.students.find().sort({_id:-1}).limit(2).pretty() for sorting in reverse
+db.students.insert([{name:"Naimat",age:18,gpa:3.3,courses:["Bio","Math","Chem"],adress:{street:"123 streets",city:"Karachi"}},{name:"Ali",age:23,gpa:1.7},{name:"Jawad",age:17,gpa:4}]) 
+
+
+db.students.update({name:"Naimat"},{$set:{fulltime:true}}) it will update the record of naimat(must follow the syntax}
+db.students.update({filter},{updated});
+db.students.update({},{$unset:{fulltime:true}}) it will remove the the entire fieled from each document
+db.students.updateMany({},{$set:{fulltime:false}}) will include fuilltime in each documents 
+
+db.students.deleteMany({name:"Hammad"}) delete each document where name like hammad
+
+
+Operators:
+> db.students.find({name:{$ne: "Naimat"}}).pretty() find the document where name not like Naimat
+
+> db.students.find({age:{$gte: 17}}).pretty() greater than and euual too
+
+db.students.find({age:{$lte: 17}}).pretty() less than and euual too
+
+> db.students.find({gpa:{$gte:3, $lte:4}}).pretty()   between operator. gpa greater then 3 and less then equal to 4
+
+db.students.find({gpa:{$in:[3.3,4]}}).pretty() in operator same  as or oprrator
+db.students.find({$or:[{age:18},{age:20}]}).pretty() or operator
+> db.students.find({$and:[{age:18},{name:"Naimat"}]}).pretty() and operator
+
+> db.students.find({$and:[{age:{$lte:18}},{name:"Naimat"}]}).pretty() same as above
+
+> db.students.find({age:{$not:{$lte:18}}}).pretty() not operator
+
+db.Students.aggregate([
+  { $group: { _id: "$department.department_name", averageAge: { $avg: "$age" } } }
+]);  Aggregate functions 
+first three letters
+db.restaurent.find({name:/^Mor/}).pretty();
+
+last two letters
+db.restuarent.find( {name: /op$/},{_id:0}).pretty()
+
+reg in between
+db.restaurants.find(
+{"name": /.*Reg.*/},
+{
+"restaurant_id" : 1,
+"name":1,"borough":1,
+"cuisine" :1
+}
+);
+
+Write a MongoDB query to find the restaurant Id, name, and grades for those restaurants which achieved a grade of "A" and scored 11 on an ISODate "2014-08-11T00:00:00Z" among many of survey dates.
+db.restaurants.find( 
+                {
+                 "grades.date": ISODate("2014-08-11T00:00:00Z"), 
+                 "grades.grade":"A" , 
+                 "grades.score" : 11
+                }, 
+                {"restaurant_id" : 1,"name":1,"grades":1}
+             );
+
+
+Write a MongoDB query to arranged the name of the cuisine in ascending order and for that same cuisine borough should be in descending order.
+db.restaurants.find().sort(
+                           {"cuisine":1,"borough" : -1,}
+                          );
+
+all filed contains streets or not
+db.restaurants.find(
+                     {"address.street" : 
+                         { $exists : true } 
+			 {  $upsert:1}
+                     } 
+                   );
+db.restaurants.find(
+                      {"grades.score" :
+                         {$mod : [7,0]}
+                      },
+                         {"restaurant_id" : 1,"name":1,"grades":1}
+                    );
+
+

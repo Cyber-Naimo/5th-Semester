@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Tf5eMHcjEe2a1v7ok0j8oA" name="deployment_fiagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_TjXB4HcjEe2a1v7ok0j8oA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_VXfR8HcjEe2a1v7ok0j8oA" name="Hostel Managment System">
+    <packagedElement xmi:type="uml:Package" xmi:id="_19eFoHcjEe2a1v7ok0j8oA" name="Student">
+      <packagedElement xmi:type="uml:ExecutionEnvironment" xmi:id="_ZnBYAHckEe2a1v7ok0j8oA" name="windows">
+        <nestedClassifier xmi:type="uml:Artifact" xmi:id="_lVE6kHckEe2a1v7ok0j8oA" name="check rent status"/>
+        <nestedClassifier xmi:type="uml:Artifact" xmi:id="_pB-DEHckEe2a1v7ok0j8oA" name="add remove facilites"/>
+        <nestedClassifier xmi:type="uml:Artifact" xmi:id="_rp6VsHckEe2a1v7ok0j8oA" name="add complaints"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CommunicationPath" xmi:id="__AWl8HckEe2a1v7ok0j8oA" memberEnd="__AWl83ckEe2a1v7ok0j8oA __AWl9HckEe2a1v7ok0j8oA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__AWl8XckEe2a1v7ok0j8oA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__AWl8nckEe2a1v7ok0j8oA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__AWl83ckEe2a1v7ok0j8oA" name="database" type="_PYnDQHckEe2a1v7ok0j8oA" association="__AWl8HckEe2a1v7ok0j8oA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__AWl9HckEe2a1v7ok0j8oA" name="windows" type="_ZnBYAHckEe2a1v7ok0j8oA" association="__AWl8HckEe2a1v7ok0j8oA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_y20BQHckEe2a1v7ok0j8oA" name="warden">
+      <packagedElement xmi:type="uml:ExecutionEnvironment" xmi:id="_0t3pgHckEe2a1v7ok0j8oA" name="ExecutionEnvironment1">
+        <nestedClassifier xmi:type="uml:Artifact" xmi:id="_1Y7_wHckEe2a1v7ok0j8oA" name="add student"/>
+        <nestedClassifier xmi:type="uml:Artifact" xmi:id="_26ZLcHckEe2a1v7ok0j8oA" name="add facilites"/>
+        <nestedClassifier xmi:type="uml:Artifact" xmi:id="_4JElEHckEe2a1v7ok0j8oA" name="view and resolve complaints"/>
+        <nestedClassifier xmi:type="uml:Artifact" xmi:id="_5_YmcHckEe2a1v7ok0j8oA" name="check rent status"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_8xKKgHckEe2a1v7ok0j8oA" memberEnd="_8xKKg3ckEe2a1v7ok0j8oA _8xTUcHckEe2a1v7ok0j8oA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8xKKgXckEe2a1v7ok0j8oA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8xKKgnckEe2a1v7ok0j8oA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8xKKg3ckEe2a1v7ok0j8oA" name="database" type="_PYnDQHckEe2a1v7ok0j8oA" association="_8xKKgHckEe2a1v7ok0j8oA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8xTUcHckEe2a1v7ok0j8oA" name="executionenvironment1" type="_0t3pgHckEe2a1v7ok0j8oA" association="_8xKKgHckEe2a1v7ok0j8oA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_FWHOIHclEe2a1v7ok0j8oA" memberEnd="_FWHOI3clEe2a1v7ok0j8oA _FWHOJHclEe2a1v7ok0j8oA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FWHOIXclEe2a1v7ok0j8oA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FWHOInclEe2a1v7ok0j8oA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_FWHOI3clEe2a1v7ok0j8oA" name="windows" type="_ZnBYAHckEe2a1v7ok0j8oA" association="_FWHOIHclEe2a1v7ok0j8oA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_FWHOJHclEe2a1v7ok0j8oA" name="executionenvironment1" type="_0t3pgHckEe2a1v7ok0j8oA" association="_FWHOIHclEe2a1v7ok0j8oA"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Node" xmi:id="_PYnDQHckEe2a1v7ok0j8oA" name="database">
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_TqtKkHckEe2a1v7ok0j8oA" name="SQL"/>
+  </packagedElement>
+</uml:Model>

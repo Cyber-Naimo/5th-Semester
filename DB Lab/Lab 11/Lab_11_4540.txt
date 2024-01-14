@@ -1,0 +1,16 @@
+1. db.restuarent.find().pretty()
+2.  db.restuarent.find({},{restuarent_id:1,name:1,borough:1,cuisine:1}).pretty()
+3. db.restuarent.find({},{restuarent_id:1,name:1,borough:1,cuisine:1,_id:0}).pretty()
+4. > db.restuarent.find({}, { name:1,restuarent_id:1,borough:1,cuisine:1,"address.zipcode":1,_id:0 }).pretty()
+5. db.restuarent.find({borough:"Bronx"}).pretty()
+6. db.restuarent.find({borough:"Bronx"}).limit(5).pretty()
+7.db.restuarent.find({"grades.score": {$gt:90}}).pretty()
+8.
+-- 1ST WAY:
+db.restuarent.find( { grades: { $elemMatch: { "score": {$gt:80,$lt:100 } } } } ).pretty()
+-- 2nd way
+db.restuarent.find({"grades.score":{$gt:80,$lt:100}}).pretty()
+--3rd way
+db.restuarent.find({$and:[{"grades.score":{$gt:80}},{"grades.score":{$lt:100}}]}).pretty()
+9.db.restuarent.find({"address.coord": {$lt:-95.75}}).pretty()
+10.db.restuarent.find( {borough:"Bronx",cuisine: {$in:["American","Chiniese"]}} )

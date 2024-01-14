@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Wduq4HGJEe27Ko1FKpQuNg" name="uc1">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_WhRHEHGJEe27Ko1FKpQuNg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_fl6-cHGJEe27Ko1FKpQuNg" name="Student registration and login">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_k_-MUHGJEe27Ko1FKpQuNg" name="fill registration form">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_LaWAgHGKEe27Ko1FKpQuNg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_SUERYHGKEe27Ko1FKpQuNg" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8LsFAHGJEe27Ko1FKpQuNg" name="verify registration form"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_DiALQHGKEe27Ko1FKpQuNg" name="incomplete form">
+      <extend xmi:type="uml:Extend" xmi:id="_LaRIAHGKEe27Ko1FKpQuNg" extendedCase="_k_-MUHGJEe27Ko1FKpQuNg" extensionLocation="_LaWAgHGKEe27Ko1FKpQuNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OpCKEHGKEe27Ko1FKpQuNg" name="incorrect form">
+      <extend xmi:type="uml:Extend" xmi:id="_SUDDQHGKEe27Ko1FKpQuNg" extendedCase="_k_-MUHGJEe27Ko1FKpQuNg" extensionLocation="_SUERYHGKEe27Ko1FKpQuNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UxxC4HGKEe27Ko1FKpQuNg" name="allocate room">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kpUxcHGKEe27Ko1FKpQuNg" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_a5qOMHGKEe27Ko1FKpQuNg" name="add student"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_g9TysHGKEe27Ko1FKpQuNg" name="rooms not avaliable">
+      <extend xmi:type="uml:Extend" xmi:id="_kpTjUHGKEe27Ko1FKpQuNg" extendedCase="_UxxC4HGKEe27Ko1FKpQuNg" extensionLocation="_kpUxcHGKEe27Ko1FKpQuNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_uuK6gHGKEe27Ko1FKpQuNg" name="logs in">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_L9pFYHGLEe27Ko1FKpQuNg" name="ExtensionPoint3"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_euGTsHGLEe27Ko1FKpQuNg" name="ExtensionPoint4"/>
+      <include xmi:type="uml:Include" xmi:id="_8UoJIHGKEe27Ko1FKpQuNg" addition="_4BuwkHGKEe27Ko1FKpQuNg"/>
+      <include xmi:type="uml:Include" xmi:id="__j1QEHGKEe27Ko1FKpQuNg" addition="_9ptFsHGKEe27Ko1FKpQuNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4BuwkHGKEe27Ko1FKpQuNg" name="enter email"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9ptFsHGKEe27Ko1FKpQuNg" name="enter password"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CwQv0HGLEe27Ko1FKpQuNg" name="Uincorrect email">
+      <extend xmi:type="uml:Extend" xmi:id="_L9n3QHGLEe27Ko1FKpQuNg" extendedCase="_uuK6gHGKEe27Ko1FKpQuNg" extensionLocation="_L9pFYHGLEe27Ko1FKpQuNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_TXMs4HGLEe27Ko1FKpQuNg" name="incorrect password">
+      <extend xmi:type="uml:Extend" xmi:id="_euEegHGLEe27Ko1FKpQuNg" extendedCase="_uuK6gHGKEe27Ko1FKpQuNg" extensionLocation="_euGTsHGLEe27Ko1FKpQuNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jUyK8HGLEe27Ko1FKpQuNg" name="verify login"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_h5T9YHGJEe27Ko1FKpQuNg" name="student"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_jaFzoHGJEe27Ko1FKpQuNg" name="warden"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tUJpAHGJEe27Ko1FKpQuNg" memberEnd="_tUVPMHGJEe27Ko1FKpQuNg _tUbV0HGJEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tUQ9wHGJEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tURk0HGJEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tUVPMHGJEe27Ko1FKpQuNg" name="student" type="_h5T9YHGJEe27Ko1FKpQuNg" association="_tUJpAHGJEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tUbV0HGJEe27Ko1FKpQuNg" name="fill registration form" type="_k_-MUHGJEe27Ko1FKpQuNg" association="_tUJpAHGJEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uuHsoHGJEe27Ko1FKpQuNg" name="submits here" memberEnd="_uuKv8HGJEe27Ko1FKpQuNg _uuLXAHGJEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uuJh0HGJEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uuKI4HGJEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uuKv8HGJEe27Ko1FKpQuNg" name="warden" type="_jaFzoHGJEe27Ko1FKpQuNg" association="_uuHsoHGJEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uuLXAHGJEe27Ko1FKpQuNg" name="fill registration form" type="_k_-MUHGJEe27Ko1FKpQuNg" association="_uuHsoHGJEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BHROMHGKEe27Ko1FKpQuNg" name="warden verifies" memberEnd="_BHTDYHGKEe27Ko1FKpQuNg _BHTqcHGKEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BHScUHGKEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BHScUXGKEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BHTDYHGKEe27Ko1FKpQuNg" name="warden" type="_jaFzoHGJEe27Ko1FKpQuNg" association="_BHROMHGKEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_BHTqcHGKEe27Ko1FKpQuNg" name="verify registration form" type="_8LsFAHGJEe27Ko1FKpQuNg" association="_BHROMHGKEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YECr8HGKEe27Ko1FKpQuNg" name="warden allocates room" memberEnd="_YEEhIHGKEe27Ko1FKpQuNg _YEFIMHGKEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YED6EHGKEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YED6EXGKEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YEEhIHGKEe27Ko1FKpQuNg" name="warden" type="_jaFzoHGJEe27Ko1FKpQuNg" association="_YECr8HGKEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YEFIMHGKEe27Ko1FKpQuNg" name="allocate room" type="_UxxC4HGKEe27Ko1FKpQuNg" association="_YECr8HGKEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eCPIsHGKEe27Ko1FKpQuNg" name="add  the student in db" memberEnd="_eCRk8HGKEe27Ko1FKpQuNg _eCSMAHGKEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eCQ94HGKEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eCQ94XGKEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eCRk8HGKEe27Ko1FKpQuNg" name="warden" type="_jaFzoHGJEe27Ko1FKpQuNg" association="_eCPIsHGKEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eCSMAHGKEe27Ko1FKpQuNg" name="add student" type="_a5qOMHGKEe27Ko1FKpQuNg" association="_eCPIsHGKEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zx3d4HGKEe27Ko1FKpQuNg" name="student logs in" memberEnd="_zx5TEHGKEe27Ko1FKpQuNg _zx5TEXGKEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zx4sAHGKEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zx4sAXGKEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zx5TEHGKEe27Ko1FKpQuNg" name="student" type="_h5T9YHGJEe27Ko1FKpQuNg" association="_zx3d4HGKEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zx5TEXGKEe27Ko1FKpQuNg" name="logs in" type="_uuK6gHGKEe27Ko1FKpQuNg" association="_zx3d4HGKEe27Ko1FKpQuNg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_PPiS8HGWEe27Ko1FKpQuNg" name="database"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SMz8YHGWEe27Ko1FKpQuNg" name="verify from database" memberEnd="_SM404HGWEe27Ko1FKpQuNg _SM6DAHGWEe27Ko1FKpQuNg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SM2_sHGWEe27Ko1FKpQuNg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SM4N0HGWEe27Ko1FKpQuNg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SM404HGWEe27Ko1FKpQuNg" name="database" type="_PPiS8HGWEe27Ko1FKpQuNg" association="_SMz8YHGWEe27Ko1FKpQuNg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SM6DAHGWEe27Ko1FKpQuNg" name="verify login" type="_jUyK8HGLEe27Ko1FKpQuNg" association="_SMz8YHGWEe27Ko1FKpQuNg"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OoqzcHUIEe2m5OUqYSll7w" name="state_diagram3">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Op0C8HUIEe2m5OUqYSll7w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_OpCm4HUIEe2m5OUqYSll7w" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_OpEcEHUIEe2m5OUqYSll7w" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_-zlCsHUKEe2m5OUqYSll7w" name="warden registers" source="_T9VyEHUIEe2m5OUqYSll7w" target="_Uqz8EHUIEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_B9YsQHULEe2m5OUqYSll7w" name="warden loggs in" source="_Uqz8EHUIEe2m5OUqYSll7w" target="_isHToHUIEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_D_DCAHULEe2m5OUqYSll7w" name="warden enters the home page" source="_isHToHUIEe2m5OUqYSll7w" target="_u1PBkHUIEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Gf8RcHULEe2m5OUqYSll7w" name="watden adds a facility " source="_u1PBkHUIEe2m5OUqYSll7w" target="_xT2ZEHUIEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_JpXggHULEe2m5OUqYSll7w" name="warden discontinues the facilities " source="_u1PBkHUIEe2m5OUqYSll7w" target="_2Fj0kHUIEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_O0I8QHULEe2m5OUqYSll7w" source="_2Fj0kHUIEe2m5OUqYSll7w" target="_u1PBkHUIEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QGBa4HULEe2m5OUqYSll7w" source="_xT2ZEHUIEe2m5OUqYSll7w" target="_u1PBkHUIEe2m5OUqYSll7w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TzFigHULEe2m5OUqYSll7w" source="_u1PBkHUIEe2m5OUqYSll7w" target="_TA0YEHULEe2m5OUqYSll7w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_T9VyEHUIEe2m5OUqYSll7w" name="Initial1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Uqz8EHUIEe2m5OUqYSll7w" name="register"/>
+      <subvertex xmi:type="uml:State" xmi:id="_isHToHUIEe2m5OUqYSll7w" name="loggedin"/>
+      <subvertex xmi:type="uml:State" xmi:id="_u1PBkHUIEe2m5OUqYSll7w" name="home page"/>
+      <subvertex xmi:type="uml:State" xmi:id="_xT2ZEHUIEe2m5OUqYSll7w" name="hostel has facilities"/>
+      <subvertex xmi:type="uml:State" xmi:id="_2Fj0kHUIEe2m5OUqYSll7w" name="hostel does not have facilities"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_TA0YEHULEe2m5OUqYSll7w" name="FinalState14"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_puULEHUIEe2m5OUqYSll7w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_puUyIHUIEe2m5OUqYSll7w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oFMoMHNHEe2MaoQ2cFXeig" name="activity_diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_oJ8lUHNHEe2MaoQ2cFXeig">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_oHdSAHNHEe2MaoQ2cFXeig" name="Activity1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_BYvIAHNTEe2MaoQ2cFXeig" name="Activity3" node="_l8icIHNTEe2MaoQ2cFXeig _oZY5EHNTEe2MaoQ2cFXeig _rH3RgHNTEe2MaoQ2cFXeig _wEPE4HNTEe2MaoQ2cFXeig _oWybkHNUEe2MaoQ2cFXeig _r-oE8HNUEe2MaoQ2cFXeig _Vq0PMHNVEe2MaoQ2cFXeig _-OvJ0HNVEe2MaoQ2cFXeig _K4p3sHNWEe2MaoQ2cFXeig _O1GfIHNWEe2MaoQ2cFXeig _vmU5gHNWEe2MaoQ2cFXeig _6lUWoHNWEe2MaoQ2cFXeig" group="_LVoO8HNTEe2MaoQ2cFXeig _Ml6LEHNTEe2MaoQ2cFXeig _ZOMhQHNTEe2MaoQ2cFXeig _Jb8JcHNTEe2MaoQ2cFXeig">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bvQTUHNUEe2MaoQ2cFXeig" inPartition="_Jb8JcHNTEe2MaoQ2cFXeig" target="_oZY5EHNTEe2MaoQ2cFXeig" source="_l8icIHNTEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dcwW8HNUEe2MaoQ2cFXeig" name="student signs up" inPartition="_Jb8JcHNTEe2MaoQ2cFXeig" target="_rH3RgHNTEe2MaoQ2cFXeig" source="_oZY5EHNTEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_kEUg0HNUEe2MaoQ2cFXeig" name="warden registers" target="_wEPE4HNTEe2MaoQ2cFXeig" source="_oZY5EHNTEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vGUOoHNUEe2MaoQ2cFXeig" name="warden verifies student registration" target="_oWybkHNUEe2MaoQ2cFXeig" source="_rH3RgHNTEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zuM_wHNUEe2MaoQ2cFXeig" name="admin verifies warden registration" target="_r-oE8HNUEe2MaoQ2cFXeig" source="_wEPE4HNTEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_UN8MEHNWEe2MaoQ2cFXeig" name="the admin assigns hostel to the warden" inPartition="_Ml6LEHNTEe2MaoQ2cFXeig" target="_K4p3sHNWEe2MaoQ2cFXeig" source="_r-oE8HNUEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YpfxYHNWEe2MaoQ2cFXeig" name="the student added in database" target="_-OvJ0HNVEe2MaoQ2cFXeig" source="_K4p3sHNWEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_eJtRoHNWEe2MaoQ2cFXeig" name="the admin assigns room to the student" target="_O1GfIHNWEe2MaoQ2cFXeig" source="_oWybkHNUEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qgFYcHNWEe2MaoQ2cFXeig" name="student added in the database" target="_Vq0PMHNVEe2MaoQ2cFXeig" source="_O1GfIHNWEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xcHWcHNWEe2MaoQ2cFXeig" name="for warden" inPartition="_ZOMhQHNTEe2MaoQ2cFXeig" target="_vmU5gHNWEe2MaoQ2cFXeig" source="_-OvJ0HNVEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2gIp8HNWEe2MaoQ2cFXeig" name="for student" inPartition="_ZOMhQHNTEe2MaoQ2cFXeig" target="_vmU5gHNWEe2MaoQ2cFXeig" source="_Vq0PMHNVEe2MaoQ2cFXeig"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_9OzhYHNWEe2MaoQ2cFXeig" name="registration done" inPartition="_ZOMhQHNTEe2MaoQ2cFXeig" target="_6lUWoHNWEe2MaoQ2cFXeig" source="_vmU5gHNWEe2MaoQ2cFXeig"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_Jb8JcHNTEe2MaoQ2cFXeig" name="student" node="_l8icIHNTEe2MaoQ2cFXeig _oZY5EHNTEe2MaoQ2cFXeig _rH3RgHNTEe2MaoQ2cFXeig" edge="_bvQTUHNUEe2MaoQ2cFXeig _dcwW8HNUEe2MaoQ2cFXeig"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_LVoO8HNTEe2MaoQ2cFXeig" name="warden" node="_wEPE4HNTEe2MaoQ2cFXeig _oWybkHNUEe2MaoQ2cFXeig"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_Ml6LEHNTEe2MaoQ2cFXeig" name="admin" node="_r-oE8HNUEe2MaoQ2cFXeig _K4p3sHNWEe2MaoQ2cFXeig _O1GfIHNWEe2MaoQ2cFXeig" edge="_UN8MEHNWEe2MaoQ2cFXeig"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_ZOMhQHNTEe2MaoQ2cFXeig" name="database" node="_Vq0PMHNVEe2MaoQ2cFXeig _-OvJ0HNVEe2MaoQ2cFXeig _vmU5gHNWEe2MaoQ2cFXeig _6lUWoHNWEe2MaoQ2cFXeig" edge="_xcHWcHNWEe2MaoQ2cFXeig _2gIp8HNWEe2MaoQ2cFXeig _9OzhYHNWEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_l8icIHNTEe2MaoQ2cFXeig" name="" outgoing="_bvQTUHNUEe2MaoQ2cFXeig" inPartition="_Jb8JcHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_oZY5EHNTEe2MaoQ2cFXeig" name="" incoming="_bvQTUHNUEe2MaoQ2cFXeig" outgoing="_dcwW8HNUEe2MaoQ2cFXeig _kEUg0HNUEe2MaoQ2cFXeig" inPartition="_Jb8JcHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rH3RgHNTEe2MaoQ2cFXeig" name="register" incoming="_dcwW8HNUEe2MaoQ2cFXeig" outgoing="_vGUOoHNUEe2MaoQ2cFXeig" inPartition="_Jb8JcHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_wEPE4HNTEe2MaoQ2cFXeig" name="rehister" incoming="_kEUg0HNUEe2MaoQ2cFXeig" outgoing="_zuM_wHNUEe2MaoQ2cFXeig" inPartition="_LVoO8HNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_oWybkHNUEe2MaoQ2cFXeig" name="verify registration" incoming="_vGUOoHNUEe2MaoQ2cFXeig" outgoing="_eJtRoHNWEe2MaoQ2cFXeig" inPartition="_LVoO8HNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_r-oE8HNUEe2MaoQ2cFXeig" name="verify registration" incoming="_zuM_wHNUEe2MaoQ2cFXeig" outgoing="_UN8MEHNWEe2MaoQ2cFXeig" inPartition="_Ml6LEHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Vq0PMHNVEe2MaoQ2cFXeig" name="add student" incoming="_qgFYcHNWEe2MaoQ2cFXeig" outgoing="_2gIp8HNWEe2MaoQ2cFXeig" inPartition="_ZOMhQHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_-OvJ0HNVEe2MaoQ2cFXeig" name="add warden" incoming="_YpfxYHNWEe2MaoQ2cFXeig" outgoing="_xcHWcHNWEe2MaoQ2cFXeig" inPartition="_ZOMhQHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_K4p3sHNWEe2MaoQ2cFXeig" name="assign hostel" incoming="_UN8MEHNWEe2MaoQ2cFXeig" outgoing="_YpfxYHNWEe2MaoQ2cFXeig" inPartition="_Ml6LEHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_O1GfIHNWEe2MaoQ2cFXeig" name="assign room" incoming="_eJtRoHNWEe2MaoQ2cFXeig" outgoing="_qgFYcHNWEe2MaoQ2cFXeig" inPartition="_Ml6LEHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_vmU5gHNWEe2MaoQ2cFXeig" name="DecisionNode24" incoming="_xcHWcHNWEe2MaoQ2cFXeig _2gIp8HNWEe2MaoQ2cFXeig" outgoing="_9OzhYHNWEe2MaoQ2cFXeig" inPartition="_ZOMhQHNTEe2MaoQ2cFXeig"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_6lUWoHNWEe2MaoQ2cFXeig" name="ActivityFinalNode27" incoming="_9OzhYHNWEe2MaoQ2cFXeig" inPartition="_ZOMhQHNTEe2MaoQ2cFXeig"/>
+  </packagedElement>
+</uml:Model>

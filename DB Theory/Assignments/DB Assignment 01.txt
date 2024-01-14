@@ -1,0 +1,124 @@
+Name = Muhammad Naimat Ullah Khan
+Roll No = 21K - 4540
+
+
+
+QUESTION NO 1:
+
+* PART 1 *
+We choose database system for several reasons:
+
+- Reasons to choose a database:
+  - Data organization and structure: Databases make it easy to organize and structure complex data sets.
+  - Data integrity: Database systems help maintain the accuracy and consistency of data through validation, constraints, and transactions.
+  - Security: Databases provide features like authentication, authorization, and encryption to protect data from unauthorized access.
+
+- When not to use a database system:
+  - Small and simple data sets: For small and simple data sets, it may be more efficient to store data in operating system files.
+  - Specialized data storage needs: If you have specific storage needs like images or videos, there may be better specialized solutions.
+  - Cost: Database systems can be expensive, especially for large and complex data sets. Consider simpler and less expensive storage options if on a tight budget.
+
+
+
+* Part 2 *
+
+Responsibilities of a DBA involves:
+
+- Database design and implementation: DBAs work with developers to create and modify databases.
+- Database performance tuning: DBAs improve the performance of databases by optimizing SQL queries and adjusting database settings.
+- Database security: DBAs implement security measures to protect databases from unauthorized access and changes.
+- Database backup and recovery: DBAs regularly back up databases and create plans to recover data in case of a failure.
+- Database monitoring and troubleshooting: DBAs monitor databases for issues and troubleshoot any problems that arise.
+- Understanding query optimization: DBAs need to understand query optimization to identify and resolve performance issues with database queries.
+- Collaboration with developers: DBAs work with developers to help them optimize their SQL queries.
+
+* Part 3 *
+
+
+ I think that the data model plays an important role in representing information about the real world in a database because: 
+- The data model is a framework for organizing and structuring data in a database.
+- It represents information about the real world and includes data relationships and constraints.
+- The data definition language (DDL) is used to create and modify the structure of a database.
+- The data manipulation language (DML) is used to insert, update, delete, and query data in a database.
+- The buffer manager manages the temporary storage area for data being read from or written to the database.
+- The data model is the foundation for managing a database and is essential for efficient and effective data storage and management.
+
+
+-----------------------------------------------------------------------------------------------
+************************************    END OF QUESTION NO 1 **********************************
+-----------------------------------------------------------------------------------------------
+
+QUESTION NO 2:
+
+-- 1. Find the names of all Juniors (level = JR) who are enrolled in a class taught by I. Teach.
+
+SELECT sname from Student join Enrolled on Student.snum = Enrolled.snum
+join class on enrolled.cname = Class.name
+join faculty on Class.fid = Faculty.fid 
+where level like 'JR' and Faculty.fname like 'I. Teach';
+
+-- 2. Find the age of the oldest student who is either a History major or enrolled in a course taught by I. Teach.
+
+select max(age) as Oldest_Student from student join Enrolled on Student.snum = Enrolled.snum
+join Class on Enrolled.cname = Class.name
+join faculty on Class.fid = Faculty.fid
+where major like 'History' OR Faculty.fname like 'I. Teach'; 
+
+-- 3. Find the names of all classes that either meet in room R128 or have five or more students enrolled.
+
+select distinct name from Class where room like 'R128' or name in(select cname from Enrolled group by cname having count(*) >=5 );
+
+-- 4. Find the names of all students who are enrolled in two classes that meet at the same time.
+
+select sname from Student join Enrolled as  e1 on Student.snum = e1.snum
+join class as c1 on Enrolled.cname = c1.name
+join Enrolled as e2 on Student.snum = e2.snum
+join class as c2 on Enrolled.cname = c2.name
+where c1.meets_at = c2.meets_at;
+  
+-- 5. Find the names of faculty members who teach in every room in which some class is taught.
+
+select distinct fname from Faculty where not exists ((select class.room from Class) 
+except (select class.room from class where class.fid = fid));
+
+-- 6. Find the names of faculty members for whom the combined enrollment of the courses that they teach is less than five.
+select fname from Faculty where fid in (select class.fid from class group by class.fid having count(*) < 5);
+
+-- 7. Print the level and the average age of students for that level, for each level.
+
+select level,avg(age) from Student group by level;
+
+-- 8. Print the level and the average age of students for that level, for all levels except JR.
+select level,avg(age) from Student group by level having level not like 'JR';
+
+-- 9. For each faculty member that has taught classes only in room R128, print the faculty member's 
+name and the total number of classes she or he has taught.
+
+select fname,count(*) from Faculty where fid in 
+(select class.fid from class group by  class.fid having class.room like 'R128');
+
+-- 10. Find the names of students enrolled in the maximum number of classes.
+select distinct sname from Student where snum in 
+(select E1.snum from Enrolled E1 group by E1.snum having count(*) >= ALL 
+(select E2.snum from Enrolled E2 group by E2.snum));
+
+-- 11. Find the names of students not enrolled in any class.
+select distinct sname from student where snum not in (select snum from Enrolled);
+
+-- 12. For each age valuethat appears in Students, find the level value that appears most often.
+ For example, if there are more FR level students aged 18 than SR, JR, or  SO students aged 18,
+ you should print the pair (18, FR).
+ 
+select age,level from Student group by age,level having level in 
+(SELECT p1.level from Student p1 where p1.age = age group by p1.age,p1.level having count(*) >= ALL 
+(select count(*) from Student p2 where p1.age = p2.age group by p2.age,p2.level ));
+
+
+
+
+-----------------------------------------------------------------------------------------------
+************************************    END OF QUESTION NO 2 **********************************
+-----------------------------------------------------------------------------------------------
+
+QUESTION NO 3:
+

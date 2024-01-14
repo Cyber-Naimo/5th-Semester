@@ -1,0 +1,559 @@
+Member 01 = Muhammad Naimatullah Khan --> 4540
+Member 02 = Mohsin Khan --> 4530
+Member 03 = Muhammad Nohail --> 4608 
+
+
+Q1.A)
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+    int n,m;
+    int solveTab(string str1, string str2)
+    {
+         n = str1.length();
+         m = str2.length();
+
+        vector<vector<int>> dp(n+1,vector<int> (m+1,0));
+
+        // Code of Longest Common Sequence
+        for(int i = 1;i<n+1;i++)
+        {
+            for(int j = 1;j<m+1;j++)
+            {
+                if(str1[i-1] == str2[j-1])
+                {
+                    dp[i][j] = 1+dp[i-1][j-1];
+                }
+                else
+                {
+                    dp[i][j] = max(dp[i-1][j],dp[i][j-1]);
+                }
+            }
+        }
+        return dp[n][m];
+    }
+    int longestCommonSubsequence(string str1, string str2) 
+    {
+        n = str1.length();
+        m = str2.length();
+
+        vector<vector<int>> dp(n+1,vector<int> (m+1,-1));
+
+        return solveTab(str1,str2,0,0,dp);
+    }
+int main()
+{
+	string s1 = "BNCABA";
+	string s2 = "OBCBDAB";
+	int ans = longestCommonSubsequence(s1,s2);
+	cout<<ans<<endl; 
+}
+********************************* *****************************************
+
+Q2.B)
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+    string shortestCommonSupersequence(string str1, string str2) 
+    {
+        // lengths
+        int n = str1.length();
+        int m = str2.length();
+
+        // dp array for memoization putting 0 initially
+        vector<vector<int>> dp(n+1,vector<int> (m+1,0));
+
+        // Code of Longest Common Sequence
+        for(int i = 1;i<n+1;i++)
+        {
+            for(int j = 1;j<m+1;j++)
+            {
+                if(str1[i-1] == str2[j-1])
+                {
+                    dp[i][j] = 1+dp[i-1][j-1];
+                }
+                else
+                {
+                    dp[i][j] = max(dp[i-1][j],dp[i][j-1]);
+                }
+            }
+        }
+
+        // now work backward to print the pattern
+
+        int i = n;
+        int j = m;
+        string ans;
+        // base case when your string become empty
+        while(i>0 && j>0 )
+        {
+            // if both chracter matches mean add that character in ans string
+            if(str1[i-1] == str2[j-1])
+            {
+                ans+=str1[i-1];
+                i--;
+                j--;
+            }
+            else
+            {
+                // if dont matches the character then check left part and or right
+                if(dp[i-1][j] > dp[i][j-1])
+                {
+                    ans+=str1[i-1];
+                    i--;
+                }
+                else
+                {
+                    ans+=str2[j-1];
+                    j--;
+                }
+            }
+        }
+
+        // if any character left then simply add that chracter in string
+        while(i>0)
+        {
+            ans+=str1[i-1];
+            i--;
+        }
+        while(j>0)
+        {
+            ans+=str2[j-1];
+            j--;
+        }
+        
+        // reverse it also
+        reverse(ans.begin(),ans.end());
+        return ans;
+    }
+int main()
+{
+	string s1 = "naimat";
+	string s2 = "mohsin";
+	string ans = shortestCommonSupersequence(s1,s2);
+	cout<<ans<<endl; 
+}
+********************************* *****************************************
+
+Q3.C)
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+    int n;
+    int solve(vector<int> &nums,int i, int p, vector<vector<int>> &dp)
+    {
+        // base case
+        if(i==n)
+        {
+            return 0;
+        }
+
+        // p!=-1 because index never be negative
+        if(p!=-1 && dp[i][p]!=-1)
+        {
+            return dp[i][p];
+        }
+
+        // only take when previous element is smaller then next element
+        // p==-1 its for first time 
+        int take = 0;
+        if(p==-1 || nums[p] < nums[i])
+        {
+            take = 1+solve(nums,i+1,i,dp);
+        }
+
+        int skip = 0;
+        // when you skip icrease the ith value but not prev because you
+        // didn't take prev value
+        skip = solve(nums,i+1,p,dp);
+
+        if(p!=-1)
+        {
+            return dp[i][p] = max(take,skip);
+        }
+        // for first time return only
+        return max(skip,take);
+    }
+    int lengthOfLIS(vector<int>& nums) 
+    {
+        n = nums.size();
+        vector<vector<int>> dp(n+1,vector<int> (n+1,-1));
+        int prev = -1;
+        // we are starting from index 0
+        return solve(nums,0,prev,dp);
+        
+    }
+
+int main()
+{
+	// group member 1 4540
+	// group member 2 4530
+	vector<int> nums = {0,10,2,0,20};
+	cout<<lengthOfLIS(nums)<<endl;
+}
+********************************* *****************************************
+
+Q4.D)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+    int n, m;
+    int solve(int i,int j,string s, string t,vector<vector<int>> &dp)
+    {
+        if(i==n) // WHEN String 1 > string 2
+        {
+            return t.length()-j;
+        }
+        if(j==m)  // WHEN String 2 > string 1
+        {
+            return s.length()-i;
+        }
+        
+        if(dp[i][j]!=-1)
+        {
+            return dp[i][j];
+        }
+        int ans = INT_MAX;
+        
+        if(s[i]==t[j]) // if match simply move forward
+        {
+            ans = solve(i+1,j+1,s,t,dp);
+        }
+        else
+        {
+            int insert_ans = 1+solve(i+1,j+1,s,t,dp); // if you insert any charcter move forward i,j
+            int update_ans = 1+solve(i,j+1,s,t,dp); // if u update simply move i
+            int delete_ans = 1+solve(i+1,j,s,t,dp); // if you delete simply move j
+            
+            ans = min({insert_ans,update_ans,delete_ans}); // for min operations take min of 3
+        }
+        return dp[i][j] = ans; // memoize
+        
+    }
+    
+    int editDistance(string s, string t) 
+    {
+        n = s.length();
+        m = t.length();
+        vector<vector<int>> dp(n+1,vector<int>(m+1,-1));
+        // STARTING FROM 0 0
+        return solve(0,0,s,t,dp);    
+    }
+
+int main() 
+{
+    string s = "ELEPHANT", t = "RELEVANT";
+    cout << editDistance(s, t)<< "\n";
+    
+    return 0;
+}
+
+********************************* *****************************************
+Q5.E)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+    int solveRec(int i,int j,vector<int> &arr,vector<vector<int>> &dp)
+    {
+        if(i>=j)
+        {
+            return 0;
+        }
+        
+        if(dp[i][j]!=-1)
+        {
+            return dp[i][j];
+        }
+        
+        int ans = INT_MAX;
+        
+        for(int k=i;k<=j-1;k++)
+        {
+            int cost = solveRec(i,k,arr,dp) + solveRec(k+1,j,arr,dp) +
+					   arr[i-1]*arr[k]*arr[j];
+            
+            ans = min(ans,cost);
+        }
+        return dp[i][j] = ans;
+    }
+    int matrixMultiplication(int N, vector<int> arr)
+    {
+       vector<vector<int>> dp(N+1,vector<int>(N+1,-1));
+       return solveRec(1,N-1,arr,dp);
+    }
+
+int main()
+{
+        vector<int> arr = {2,25,3,16,1,8};
+        int N = arr.size();
+        cout<<matrixMultiplication(N, arr)<<endl;
+    
+    return 0;
+}
+
+********************************* *****************************************
+
+Q6.F)
+
+#include<bits/stdc++.h>
+using namespace std;
+    
+    int solve(int W, int wt[], int val[], int index,int n,vector<vector<int>> &dp)
+    {
+        //base case 
+        if(index==n)
+        {
+			// if wt <= capicity so take it else dont take
+            if(wt[n]<=W)
+            {
+                return val[n];
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        
+        if(dp[index][W]!=-1)
+        {
+            return dp[index][W];
+        }
+        
+        int include = 0,exclude=0;
+		// if wt <= capicity so include
+        if(wt[index]<=W)
+        {
+			// here capicity will decrease when you pick an item
+            include = val[index] + solve(W-wt[index],wt,val,index+1,n,dp);
+        }
+		// also check when you dont include here capicity remain same because we havn't pick any thing
+        exclude = 0 + solve(W,wt,val,index+1,n,dp);
+        
+        dp[index][W] = max(include,exclude);
+        return dp[index][W];
+    }
+    int knapSack(int W, int wt[], int val[], int n) 
+    { 
+        vector<vector<int>> dp(n,vector<int>(W+1,-1));
+        return solve(W,wt,val,0,n-1,dp);
+    }
+};
+
+
+
+int main()
+{
+	int n = 5;
+	int w = 9;
+    int val[n] = {1,4,5,7,4};
+    int wt[n]  =  {1,3,4,5,2};
+    cout<<knapSack(w, wt, val, n)<<endl;
+	return 0;
+}
+
+********************************* *****************************************
+
+Q7.G)
+#include <bits/stdc++.h>
+using namespace std;
+
+    int no;
+    int solve(int index, int nums[], int target, vector<vector<int>>& dp)
+    {
+        // Base Case
+        if(index >= no)
+            return 0;
+        if(target < 0)
+            return 0;
+        if(target == 0)
+            return 1;
+        if(dp[index][target] != -1)
+            return dp[index][target];
+        
+        // find both ans of include and exclude
+        int include = 1 + solve(index + 1, nums, target - nums[index], dp);
+        int exclude = 0 + solve(index + 1, nums, target, dp);
+
+        dp[index][target] =  (include+exclude);
+        return dp[index][target];
+    }
+    int equalPartition(int N, int nums[])
+    {
+        int sum =0;
+        for(int i=0;i<N;i++)
+        {
+            sum+=nums[i];
+        }
+        no = N;
+		
+        // We cannot divide odd number into two equal halves
+        if(sum & 1) return 0;
+		
+        int target = sum / 2; 
+		
+		vector<vector<int>> dp(N,vector<int>(target+1,-1));
+        return solve(0,nums,target,dp);
+    }
+
+int main()
+{
+	// member 1 = naimat --->  n = 14,a=1,i=9
+	// member 3 = nohail --->  n= 14,o=15,h=8  
+	int n = 6;
+	int arr[n] = {14,1,9,14,15,8};
+    cout<<equalPartition(n,arr)<<endl;
+    return 0;
+}
+
+********************************* *****************************************
+
+Q8.H)
+#include<iostream>
+#include <bits/stdc++.h> 
+using namespace std;
+
+int RodCutting(vector<int> &price, int n)
+{  
+    // Tabulation
+    vector<int> dp(n+1,-1);
+    dp[0] = 0;
+    
+    for(int i=1;i<=n;i++) // for each Cut finding ans
+    {
+    	for(int j=0;j<i;j++) // iterate till specic length ex for 2 iterate till 0,1
+    	{
+    		dp[i] = max(dp[i],price[j]+dp[i-j-1]); // check from previous ans i-j-1
+		}
+	}
+	return dp[n];
+}
+
+int main()
+{
+	// here dont need length array 
+	vector<int> price = {1, 5, 8, 9, 10, 17, 17, 20};
+	cout<<RodCutting(price,8)<<endl;
+}
+********************************* *****************************************
+
+Q9.I)
+#include<iostream>
+#include <bits/stdc++.h> 
+using namespace std;
+
+
+int solveTab(vector<int> &coins, int target)
+{
+    vector<int> dp(target+1,INT_MAX);
+    //base case
+    dp[0] = 0;
+
+    for(int i=1;i<=target;i++) // finding min coin for each value till target
+    {
+        for(int j=0;j<coins.size();j++)  // checking the all coins 
+        {
+            if(i-coins[j]>=0 && dp[i-coins[j]]!=INT_MAX) // check for index outof bound
+            {
+                dp[i] = min(dp[i-coins[j]]+1,dp[i]); // taking previous coins vallue stored
+            }
+        }
+    }
+	// for valid ans
+    if(dp[target]!=INT_MAX)
+    {
+        return dp[target];
+    }
+    else
+    {
+        return -1;
+    }
+    
+}
+
+int minimumElements(vector<int> &coins, int target)
+{
+    return solveTab(coins, target); 
+}
+
+
+int main()
+{
+	vector<int> coins = {1,5,6,8};
+	int target = 13;
+	cout<<minimumElements(coins,target)<<endl;
+}
+********************************* *****************************************
+Q10.J)
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+    int n;
+    unordered_set<string> st;
+    bool solve(int index,string &s,vector<int> &dp)
+    {
+        //base case
+        if(index==n)
+        {
+            return true;
+        }
+        if(st.find(s)!=st.end())
+        {
+            return true;
+        }
+        // first checking the string if its is one worded it present or not
+        if(dp[index]!=-1)
+        {
+            return dp[index];
+        }
+
+        // now traverse each character one by one
+        for(int i=1;i<=n;i++)
+        {
+            // we take substring of length i then search it in the map
+            // and then go for next character
+            string temp = s.substr(index,i);
+            if(st.find(temp)!=st.end() && solve(index+i,s,dp))
+            {
+                return dp[index] = true;
+            }
+        }
+        
+        return dp[index] = false;
+    }
+    bool wordBreak(string s, vector<string>& wordDict) 
+    {
+        // length
+        n = s.length();
+        // now save dictionary values in unordered_set for o(1) tc
+        for(auto &word:wordDict)
+        {
+            st.insert(word);
+        }
+       vector<int> dp(n+1,-1);
+        // we are starting from 0 index
+        return solve(0,s,dp);
+    }
+    
+int main()
+{
+    string s = "ilikeapple";
+    vector<string> wordDict = {"i", "like", "ice", "cream", "icecream", "mobile","apple"};
+    if(wordBreak(s,wordDict))
+    {
+    	cout<<"Found\n";
+	}
+	else
+	{
+		cout<<"Not Found\n";
+	}
+}
+
+********************************* *****************************************
+
